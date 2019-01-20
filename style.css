@@ -227,6 +227,7 @@
 .section-1 .block-links .item-link{
 	width: 17%;
 	text-align: center;
+	transition: all 1s ease-in;
 	text-decoration: none;
 	box-shadow: -3px 3px 15px -5px rgba(0,0,0,0.75);
 	-webkit-box-shadow: -3px 3px 15px -5px rgba(0,0,0,0.75);
