@@ -47,7 +47,7 @@
 
 .wrapp_top-menu .link{
 	width: 14%;
-	transition: all 0.3s ease-in;
+
 }
 .wrapp_top-menu .link a{
 	width: 140px;
@@ -74,6 +74,7 @@
 }
 .wrapp_top-menu .link a:hover{
 	background-color: #f9f9f9;
+	transition: all 0.3s ease-in;
 }
 
 .wrapp_top-menu{
