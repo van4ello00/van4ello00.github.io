@@ -552,8 +552,13 @@
     margin-bottom: 20px;
 }
 
-.button_read-more{
+.button_center{
+	text-align: center;
+}
+
+#button_read-more{
 	color: #000;
+	text-decoration: none;
 }
 
 
