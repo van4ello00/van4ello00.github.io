@@ -1,553 +1,480 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.section-fool-slider').bxSlider({
+      	mode: 'fade',
+      	auto: true,
+      	speed: 500,
+      	stopAutoOnClick: true,
+      	controls: false,
+      	infiniteLoop: true
+      });
 
-        <link href="reset_mixitup.css" rel="stylesheet"/>
-        <link href="style_mixitup.css" rel="stylesheet"/>
+    });
+  </script>
+</head>
+<body>
 
-        <title>MixItUp MultiFilter Demo - Checkboxes</title>
+	<div class="wrapper">
+		<header>
+			<div  class="container col-md-12 flex">
+				<div style="padding: 0px;" class="logo col-md-3 ">
+					<div class="logo-wrapp">
+						<img src="img/logo.png" alt="logo">
+						<p>кровельные и фасадные материалы для строительства </p>
+					</div>
+				</div>
+				<div style="padding: 0px;" class="top-menu col col-md-9">
+					<div class="wrapp_top-menu flex">
+						<div class="link"><a href="#">О КОМПАНИИ</a></div>
+						<div class="link"><a href="#">Доставка</a></div>
+						<div class="link"><a href="#">3D-тур</a></div>
+						<div class="link"><a href="#">Оплата</a></div>
+						<div class="link"><a href="#">Расчет материалов</a></div>
+						<div class="link"><a href="#">Портфолио</a></div>
+						<div class="link"><a href="#">Бренды</a></div>
+						<div class="link"><a href="#">Контакты</a></div>
+					</div>
+					<div class="container-navigation row">
+						<div class="col-md-4 flex phones">
+							<div class="item flex icon-phone">
+								<i class="fas fa-phone fa-phone-wrapp"></i>
+							</div>
+							<div class="item">
+								<div class="phone">
+									<div class="link-phone">
+										<a href="#">095 223 55 77</a>
+									</div>
+									<div class="link-phone">
+										<a href="#">067 766 65 65</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col-md-4 col-balance ">
+							<div class="item">
+								<a href="#"><i class="fas fa-phone"></i>Обратный звонок</a>
+							</div>
+							<div class="item">
+								<a href="#"><i class="fas fa-balance-scale"></i>Сравнение (0)</a>
+							</div>
+						</div>
+						<div class="col-md-4 search-shopping">
+							<div class="item search">
+								<i class="fas fa-search"></i>
+							</div>
+							<div class="item">
+								<a href="#"><i class="fas fa-shopping-cart"></i>Корзина (0)</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="section-bottom-menu">
+		<div class="wrapper flex">
+			<a class="link" href="/">Кровельные материалы</a>
+			<a class="link" href="/">Кровельные аксессуары</a>
+			<a class="link" href="/">Фасадные и стеновые материалы</a>
+			<a class="link" href="/">Благоустройство</a>
+			<a class="link" href="/">Строительно-монтажные работы</a>
+		</div>
+	</div>
 
-        <link rel="stylesheet" type="text/css" href="style/style.css" />
-        <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+<div class="section">
+	<div class="section-fool-slider">
+		
+			<div class="slide">
+				<img src="img/slide_1-min.png" alt="">
+				<div class="slide-description wrapper">
+					<div class="description">
+						<h2>Предлагаем решения, <br> а не просто товар</h2>
+						<a href="#" class="general-batton">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<img src="img/slide_2-min.png" alt="">
+				<div class="slide-description wrapper">
+					<div class="description">
+						<h2>Предлагаем решения, <br> а не просто товар</h2>
+						<a href="#" class="general-batton">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<img src="img/slide_3-min.png" alt="">
+				<div class="slide-description wrapper">
+					<div class="description">
+						<h2>Предлагаем решения, <br> а не просто товар</h2>
+						<a href="#" class="general-batton">Подробнее</a>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
 
-        
-    </head>
-    <body>
-        <div class="container_body">
+<div class="section section-1">
+	<div class="wrapper">
+		<div class="block-links flex">
+			<a class="item-link" href="#">
+				<div class="item">
+					<div class="imege-link imege-link-1"></div>
+					<div class="link-title-p">
+						<p>Подбор и расчет  материалов</p>
+					</div>
+				</div>
+			</a>
+			<a class="item-link" href="#">
+				<div class="item">
+					<div class="imege-link imege-link-2"></div>
+					<div class="link-title-p">
+						<p>Акции</p>
+					</div>
+				</div>
+			</a>
+			<a class="item-link" href="#">
+				<div class="item">
+					<div class="imege-link imege-link-3"></div>
+					<div class="link-title-p">
+						<p>Монтаж </p>
+					</div>
+				</div>
+			</a>
+			<a class="item-link" href="#">
+				<div class="item">
+					<div class="imege-link imege-link-4"></div>
+					<div class="link-title-p">
+						<p>Строительство  дома под ключ</p>
+					</div>
+				</div>
+			</a>
+			<a class="item-link" href="#">
+				<div class="item">
+					<div class="imege-link imege-link-5"></div>
+					<div class="link-title-p">
+						<p>Доставка</p>
+					</div>
+				</div>
+			</a>
+			<a class="item-link" href="#">
+				<div class="item">
+					<div class="imege-link imege-link-6"></div>
+					<div class="link-title-p">
+						<p>Портфолио</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
 
-        	<div class="wrap">
-        		<form class="controls">
-        		    <button type="reset" class="control control-text">Reset</button>
-        		
-        		    <ul class="container_menu">
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Укладка клинкерной брусчатки</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж керамической черепицы</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж битумной черепицы</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж металлочерепицы</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
+<div class="section section-2">
+	<div class="wrapper">
+		<h3>Что мы предлагаем</h3>
 
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж композитной металлочерепицы</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
+		<div class="section-service">
+			<div class="item">
+				<div class="block">
+					<img src="img/service-img_1.jpg" alt="Кровельные материалы">
+				</div>
+				<div class="block block-info">
+					<h4>Кровельные материалы</h4>
+					<div class="description">Обустройство кровли является одним из важнейших этапов постройки здания. Ведь от кровельной конструкции напрямую зависит надежность, долговечность и уровень комфорта сооружения. Если кровля будет протекать, в помещении всегда будет повышенный уровень влажности и неприятный запах.</div>
+					<a href="#" class="link">Перейти в каталог</a>
+				</div>
+			</div>
 
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж композитной металлочерепицы</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
+			<div class="item">
+				<div class="block">
+					<img src="img/service-img_2.jpg" alt="Кровельные материалы">
+				</div>
+				<div class="block block-info">
+					<h4>Кровельные аксессуары</h4>
+					<div class="description">Чтобы завершить обустройство своей кровли, необходимо установить аксессуары. Именно эти комплектующие обеспечивают долговечность, надежность и привлекательность. Без дополнительных элементов, невозможно ввести в эксплуатацию кровельную систему и здание в целом. </div>
+					<a href="#" class="link">Перейти в каталог</a>
+				</div>
+			</div>
 
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж цементно-песчаной металлочерепицы</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                                
-                                
-                            </ul>
-                            
-                        </li>
+			<div class="item">
+				<div class="block">
+					<img src="img/service-img_3.jpg" alt="Кровельные материалы">
+				</div>
+				<div class="block block-info">
+					<h4>Фасадные и стеновые материалы</h4>
+					<div class="description">Фасадные и стеновые материалы — лицо дома, отражающее чувство стиля не только архитектора, но и владельца. Для частных домов и загородных коттеджей характерна оригинальность, уютность и ухоженность, для офисных и промышленных построек — практичность, стиль и строгость.</div>
+					<a href="#" class="link">Перейти в каталог</a>
+				</div>
+			</div>
 
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Укладка клинкерной брусчатки</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                     <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж керамической черепицы</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж битумной черепицы</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж металлочерепицы</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
+			<div class="item">
+				<div class="block">
+					<img src="img/service-img_4.jpg" alt="Кровельные материалы">
+				</div>
+				<div class="block block-info">
+					<h4>Благоустройство</h4>
+					<div class="description">Материалы для благоустройства помогают облагородить территорию, повысить ее комфорт и привлекательность. Такие элементы дают возможность укрепить грунт, защитить постройки от пагубного влияния атмосферных осадков, правильно и гармонично распределить механическую нагрузку на сад или парк.</div>
+					<a href="#" class="link">Перейти в каталог</a>
+				</div>
+			</div>
+		</div>
+		
+		<h3>Чем мы действительно отличаемся</h3>
 
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж композитной металлочерепицы</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
+		<div class="section section-differences flex">
+			<div class="item">
+				<div class="differences-icon differences-icon-1"></div>
+				<h4>Широкий ассортимент кровельных и фасадных материалов</h4>
+				<div class="differences-descr">Мы постоянно обновляем наш ассортимент и следим, чтобы материалы, пользующиеся большим спросом, всегда были в наличии</div>
+			</div>
+			<div class="item">
+				<div class="differences-icon differences-icon-2"></div>
+				<h4>Выгодные предложения</h4>
+				<div class="differences-descr">Клиентам мы предлагаем выгодную систему скидок и бонусов, а также акции и специальные цены, что позволит отлично сэкономить</div>
+			</div>
+			<div class="item">
+				<div class="differences-icon differences-icon-3"></div>
+				<h4>3D визуализация и точный расчет материала за 5 мин</h4>
+				<div class="differences-descr">Получив полный расчет от наших специалистов, вы не только отлично экономите, но избавляете себя от множества лишних проблем</div>
+			</div>
+			<div class="item">
+				<div class="differences-icon differences-icon-4"></div>
+				<h4>Удобные варианты оплаты</h4>
+				<div class="differences-descr">Работаем по наличному и безналичному расчету, позволяя вам выбрать наиболее подходящий вариант</div>
+			</div>
+			<div class="item">
+				<div class="differences-icon differences-icon-5"></div>
+				<h4>Доставка 7 дней в неделю</h4>
+				<div class="differences-descr">Мы предлагаем максимально быструю доставку в любой город Украины, а также возможность самовывоза со складов компании в Украине </div>
+			</div>
+			<div class="item">
+				<div class="differences-icon differences-icon-6"></div>
+				<h4>Консультация по любому вопросу</h4>
+				<div class="differences-descr">На нашем сайте вы можете приобрести необходимые стройматериалы, даже не выходя из дома или офиса, а по всем вопросам вас компетентно проконсультируют наши опытные сотрудники</div>
+			</div>
+			<div class="item">
+				<div class="differences-icon differences-icon-7"></div>
+				<h4>Более 10 лет на рынке</h4>
+				<div class="differences-descr">Компания «RoofUa» успешно работает на рынке строительных материалов с 2000  года. За это время мы наладили сотрудничество со многими известными производителями и проверенными поставщиками</div>
+			</div>
+			<div class="item">
+				<div class="differences-icon differences-icon-8"></div>
+				<h4>Более 2000 крыш в год</h4>
+				<div class="differences-descr">За 18 лет работы компания сумела предложить своим клиентам не только огромный ассортимент качественного материала, но и услуг в сфере строительства</div>
+			</div>
+			<div class="item">
+				<div class="differences-icon differences-icon-9"></div>
+				<h4>6 сертификатов Ruuki</h4>
+				<div class="differences-descr">RoofUa обладатель 6 сертификатов от известного производителя Ruukki, что свидетельствует о качестве нашей работы и помощи клиентам в подборе качественного и недорого материала</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж композитной металлочерепицы</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
+<div class="section section-3">
+	<div class="wrapper">
+		<div class="show">
 
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Монтаж цементно-песчаной металлочерепицы</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                                
-                                
-                            </ul>
-                            
-                        </li>
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Укладка бетонной брусчатки</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                                
-                                
-                            </ul>
-                            
-                        </li>
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Укладка террасной доски</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                                
-                                
-                            </ul>
-                            
-                        </li>
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Монтаж водосточной системы</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                                
-                                
-                            </ul>
-                            
-                        </li>
-
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Утепление мансарды и перекрытий</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                                
-                                
-                            </ul>
-                            
-                        </li>
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Производство, монтаж колпаков и парапетов на забор</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                                
-                                
-                            </ul>
-                            
-                        </li>
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Строительство частного дома под ключ</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                                
-                                
-                            </ul>
-                            
-                        </li>
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Подшивка свесов кровли</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Монтаж водосточной системы</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Облицовка вентилируемых фасадов</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Укладка клинкерной плитки</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Монтаж систем снегозадержания и безопасности кровли</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="menu">
-                            <ul>
-                                <li class="button">
-                                    <a href="#" class="box2">Монтаж мансардных окон и чердачных лестниц</a>
-                                </li>
-                                <li class="dropdown">
-                                    <fieldset data-filter-group class="checkbox-group">
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Green</label>
-                                        <input type="checkbox" value=".green"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Blue</label>
-                                        <input type="checkbox" value=".blue"/>
-                                    </div>
-                                                
-                                    <div class="checkbox">
-                                        <label class="checkbox-label">Pink</label>
-                                        <input type="checkbox" value=".pink"/>
-                                    </div>
-                                    </fieldset>
-                                </li>
-                            </ul>
-                        </li>
+			<div class="main-content">
+	  <div class="shelf__outer">
+	    <div class="shelf__box shelf--medium box-1">
+	   <h4>Выставка под открытым небом</h4>
+	   <div class="block-flex flex" style=" justify-content: space-around; height: 135px;">
+	   	<img src="img/24-7.png" alt="">
+	   	<img src="img/vip.png" alt="">
+	   </div>
+	   
+	    </div>
+	    <div class="shelf__box shelf--tall bb  box-2" >
+	<img src="img/3d-2.jpg" alt="" style="height: 370px;">
+	    </div>
+	    <div class="shelf__box  box-3">
+	    <img src="img/3d-3.jpg" alt="" style="height: 175px;">
+	    </div>
+	    <div class="shelf__box  box-4" >
+	    <img src="img/3d-4.jpg" alt="" style="height: 175px;">
+	    </div>
+	    <div class="shelf__box shelf--medium  box-5" >
+	    <img src="img/3d-5.jpg" alt="" style="height: 175px;">
+	    </div>
+	    <div class="shelf__box storage-unit aa  box-6">
+	    <img src="img/3d-6.jpg" alt="" style="height: 365px;">
+	    </div>
+	    <div class="shelf__box storage-unit  box-7">
+	    <img src="img/3d-7.jpg" alt="" style="height: 175px;">
+	    </div>
+	    <div class="shelf__box  box-8">
+	    <img src="img/3d-8.jpg" alt="" style="height: 175px;">
+	    </div>
+	    <div class="shelf__box shelf--medium  box-9">
+	    <img src="img/3d-9.jpg" alt="" style="height: 175px;">
+	    </div>
+	    <div class="shelf__box shelf--medium  box-10">
+	    <img src="img/3d-10.jpg" alt="" style="height: 175px;">
+	    </div>
+	    
+	  </div>
+	</div>
 
 
+			<div class="show-link">
+				<a class="general-batton" href="#">Смотреть 3D-тур</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section section-4">
+	<div class="wrapper">
+		<div class="section-news">
+			<h3>Новости и события</h3>
+			<div class="section-news-items flex">
+				<div class="item">
+					<p class="dete">7 марта, 2018</p>
+					<a href="#" class="title">Рекуператор для комнат Velux Smart Ventilation</a>
+				</div>
+				<div class="item">
+					<p class="dete">7 марта, 2018</p>
+					<a href="#" class="title">Рекуператор для комнат Velux Smart Ventilation</a>
+				</div>
+				<div class="item">
+					<p class="dete">7 марта, 2018</p>
+					<a href="#" class="title">Рекуператор для комнат Velux Smart Ventilation</a>
+				</div>
+				<div class="item">
+					<p class="dete">7 марта, 2018</p>
+					<a href="#" class="title">Рекуператор для комнат Velux Smart Ventilation</a>
+				</div>
+			</div>
+			<div class="block-link">
+				<a href="#" class="general-batton">Все новости</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section section-5">
+	<div class="wrapper">
+		<div class="section-question">
+			<h3>Есть вопросы?</h3>
+			<div class="question-links flex">
+				<a class="general-batton" href="#">Закажите обратный звонок</a>
+				<a class="general-batton" href="#">Задайте вопрос онлайн</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section section-6">	
+	<div class="wrapper">
+		<div class="section-about">
+			<h1>Компания RoofUa - ваш надежный помощник в обустройстве кровли</h1>
+
+			<p>Уже более 18 лет мы создаем качественные, надежные и красивые кровли для наших клиентов. За это время накоплен огромный опыт, который позволяет находить лучшие решения для самых сложных и необычных проектов.</p>
+			<p>Обратившись в наш интернет-магазин кровли, вы получите полный набор услуг, который сэкономит ваше время и деньги:</p>
+			<ul style="list-style-type: none;">
+				<li>Компьютерный расчет потребности в материалах.</li>
+				<li>Планирование для максимального эффективного использования строительных бригад.</li>
+				<li>Услуги по визуализации проекта.</li>
+				<li>Возможность посетить нашу выставку и лично увидеть широчайший ассортимент продукции.</li>
+				<li>Большая база готовых объектов с подробными фотографиями от коттеджей до отдельных элементов и узлов.</li>
+				<li>Замеры и расчет потребности в материалах силами наших специалистов.</li>
+				<li>Сопровождение объекта и шеф-монтаж - передайте нам контроль за процессом строительства, экономьте свое время, нервы и деньги.</li>
+				<li>Комплексные консультации по выбору комплектующих для конкретного случая с учетом всех особенностей объекта.</li>
+				<li>Поставка готового решения с учетом оптимального расхода и необходимыми комплектующими.</li>
+			</ul>
+			<p>Мы уверены в качестве предоставляемых услуг и, несмотря на возможные трудности, удовлетворяем потребности каждого нашего клиента. Готовы выехать на любой из объектов, который есть у нас в базе (выбранный вами), показать свою работу и предоставить рекомендации владельца.</p>
+
+			<h2>КОМПАНИЯ ROOFUA - ПОСТАВКА И МОНТАЖ КРОВЕЛЬНЫХ, ФАСАДНЫХ И СТЕНОВЫХ МАТЕРИАЛОВ</h2>
+			<p>Поставка материалов начинается с определения потребности в них, а значит - с проекта. Мы готовы начать сотрудничество с любой стадии - даже если вы только задумали строить дом. Большое количество реализованных проектов дает возможность заранее предусмотреть “подводные камни” и обойти их еще при планировании.</p>
+
+			<p>Основное направление нашей работы - монтаж кровли, при этом мы выполним монтаж фасадных и стеновых конструкций так же быстро и качественно.</p>
+
+			<p>Если вы ремонтируете уже существующий дом, на котором пришла в негодность кровля, интернет-магазин RoofUa поможет подобрать лучшие решения. Мы сделаем кровлю на старом доме не менее эффективной, надежной и качественной, чем на новом.</p>
+
+			<p>Выбирая наш интернет-магазин кровельных и фасадных материалов, вы надежно защищены от сложностей с поставкой нужных материалов в запланированном количестве в срок. На наших складах всегда в наличии необходимый ассортимент, а значит вы не рискуете потерять время и деньги из-за сбоев в длинной цепочке поставщиков.</p>
+
+			<h2>МАТЕРИАЛЫ ДЛЯ СТРОИТЕЛЬСТВА С ДОСТАВКОЙ ПО ВСЕЙ УКРАИНЕ</h2>
+
+			<p>Принимая решение купить кровельные материалы в RoofUa вы можете быть уверены в оптимальном решении транспортных вопросов. Мы располагаем специальным транспортом и сотрудниками, которые помогут вам получить заказ в Харькове, в Днепре, в Одессе, в Киеве, в Запорожье с доставкой прямо на вашу площадку.</p>
+
+			<p>Вы можете получить фасадные материалы для облицовки и любую другую продукцию на нашем складе. В этом случае мы обеспечим, чтобы транспорт был загружен в кратчайшие сроки, а груз качественно упакован, чтобы быть безопасно доставленным в любую точку в Украине.</p>
+
+			<p>Продавая вам кровельные материалы, интернет-магазин RoofUa принимает на себя все вопросы, связанные с гарантией. Работая напрямую с производителями материалов мы контролируем качество продукции на всех этапах.</p>
+
+			<p>Компания RoofUa поможет вам решить строительные задачи быстро, просто и с минимальными затратами. Доверьте нам свой проект и убедитесь, что строительство может быть легким и приятным занятием!</p>
+
+			<p>С уважением,<br>
+			Коллектив компании RoofUa</p>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="section section-footer">
+		<div class="wrapper flex" style="padding: 77px 0px 80px;">
+			<div class="item">
+				<div class="footer_menu">
+					<ul>
+						<li>О компании</li>
+						<li>Каталог</li>
+						<li>Расчет материалов</li>
+						<li>Портфолио</li>
+						<li>Контакты</li>
+						<li>Кровельные материалы</li>
+						<li>Кровельные аксессуары</li>
+						<li>Фасадные и стеновые материалы</li>
+						<li>Благоустройство</li>
+						<li>Бренды</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item flex">
+				<div class="section-tel">
+					<p>(057) 727 05 65</p>
+					<p>(095) 223 55 77</p>
+					<p>(067) 766 65 65</p>
+					<p>zakaz@roofua.com.ua</p>
+				</div>
+				<div class="section-adress">
+					<a style="color: #898989;font-weight: bold;" class="link-footer" href="#">Выставочный центр</a>
+					<p>Харьков, ул. Клочковская 119-а</p>
+					<p>пн-пт: с 9:00 до 17:00 <br>
+					сб: с 10:00 до 14:00 <br>
+					вс: выходной</p>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper flex">
+			<a class="footer-logo" href="#">RoofUa</a>
+			<p style="margin-top: 20px; margin-left: 20px; color: #fff;">Все права защищены © 2000-2019 RoofUA</p>
+		</div>
+		
+	</div>
+</footer>
 
 
-                    </ul>
-        		
-        		    <!-- <div class="control-group">
-        		        <button type="button" class="control control-sort" data-sort="default:asc">Asc</button>
-        		        <button type="button" class="control control-sort" data-sort="default:desc">Desc</button>
-        		    </div> -->
-        		</form>
-        		
-        		<div class="container products-grid">
-        		    <div class="mix green small square"></div>
-        		    <div class="mix green medium square"></div>
-        		    <div class="mix blue large triangle"></div>
-        		    <div class="mix pink large circle"></div>
-        		    <div class="mix green small circle"></div>
-        		    <div class="mix blue medium triangle"></div>
-        		    <div class="mix pink medium square"></div>
-        		    <div class="mix blue medium triangle"></div>
-        		    <div class="mix pink small circle"></div>
-        		    <div class="mix green large triangle"></div>
-        		    <div class="mix blue small square"></div>
-        		    <div class="mix pink small square"></div>
-        		    <div class="mix green large square"></div>
-        		    <div class="mix blue large circle"></div>
-        		    <div class="mix green small square"></div>
-        		    <div class="mix green medium square"></div>
-        		    <div class="mix blue large triangle"></div>
-        		    <div class="mix pink large circle"></div>
-        		    <div class="mix green small circle"></div>
-        		    <div class="mix blue medium triangle"></div>
-        		    <div class="mix pink medium square"></div>
-        		    <div class="mix blue medium triangle"></div>
-        		    <div class="mix pink small circle"></div>
-        		    <div class="mix green large triangle"></div>
-        		    <div class="mix blue small square"></div>
-        		    <div class="mix pink small square"></div>
-        		    <div class="mix green large square"></div>
-        		    <div class="mix blue large circle"></div>
-        		    <div class="mix green small square"></div>
-        		    <div class="mix green medium square"></div>
-        		    <div class="mix blue large triangle"></div>
-        		    <div class="mix pink large circle"></div>
-        		    <div class="mix green small circle"></div>
-        		    <div class="mix blue medium triangle"></div>
-        		    <div class="mix pink medium square"></div>
-        		    <div class="mix blue medium triangle"></div>
-        		    <div class="mix pink small circle"></div>
-        		    <div class="mix green large triangle"></div>
-        		    <div class="mix blue small square"></div>
-        		    <div class="mix pink small square"></div>
-        		    <div class="mix green large square"></div>
-        		    <div class="mix blue large circle"></div>
-        		    <div class="mix green small square"></div>
-        		    <div class="mix green medium square"></div>
-        		    <div class="mix blue large triangle"></div>
-        		    <div class="mix pink large circle"></div>
-        		    <div class="mix green small circle"></div>
-        		    <div class="mix blue medium triangle"></div>
-        		    <div class="mix pink medium square"></div>
-        		    <div class="mix blue medium triangle"></div>
-        		    <div class="mix pink small circle"></div>
-        		    <div class="mix green large triangle"></div>
-        		    <div class="mix blue small square"></div>
-        		    <div class="mix pink small square"></div>
-        		    <div class="mix green large square"></div>
-        		    <div class="mix blue large circle"></div>
-        		
-        		    <div class="gap"></div>
-        		    <div class="gap"></div>
-        		    <div class="gap"></div>
-        		    <div class="gap"></div>
-        		</div>
-        	</div>
-        </div>
+	
 
-        <script src="mixitup.min.js"></script>
-        <script src="mixitup-multifilter.js"></script>
 
-        <script>
-            var containerEl = document.querySelector('.container');
 
-            var mixer = mixitup(containerEl, {
-                multifilter: {
-                    enable: true
-                },
-                animation: {
-                    effects: 'fade translateZ(-100px)'
-                }
-            });
-        </script>
-    </body>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="libs/slick-1.8.1/slick/slick.js"></script>
+
+
+</body>
 </html>
