@@ -19,21 +19,7 @@
       	controls: false,
       	infiniteLoop: true
       });
-
-      $('#hide_all').readmore({
-		speed:800,
-		maxHeight:0,
-		heightMargin:16,
-		moreLink:'<div class="button_center"><a id="cf7_button_2" href="#">Развернуть</a></div>',
-		lessLink:'<div class="button_center"><a id="cf7_button_2" href="#">Скрыть</a></div>',
-		embedCSS:true,
-		blockCSS:'display: none; width: 100%;',
-		startOpen:false,blockProcessed:function(){},beforeToggle:function(){},afterToggle:function(){}
-		});
-
-    });
-
-
+      });
   </script>
 
 </head>
@@ -492,6 +478,21 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script type="text/javascript" src="libs/slick-1.8.1/slick/slick.js"></script>
 
+
+<script>
+	$('#hide_all').readmore({
+		speed:800,
+		maxHeight:0,
+		heightMargin:16,
+		moreLink:'<div class="button_center"><a id="cf7_button_2" href="#">Развернуть</a></div>',
+		lessLink:'<div class="button_center"><a id="cf7_button_2" href="#">Скрыть</a></div>',
+		embedCSS:true,
+		blockCSS:'display: none; width: 100%;',
+		startOpen:false,blockProcessed:function(){},beforeToggle:function(){},afterToggle:function(){}
+		});
+
+    
+</script>
 
 </body>
 </html>
