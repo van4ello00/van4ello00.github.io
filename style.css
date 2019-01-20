@@ -248,46 +248,46 @@
 }
 .section-1 .block-links .item-link .item .imege-link{
 	height: 50px;
-	width: 50px;
+	width: 70px;
 	margin: 0 auto;
 }
 .section-1 .block-links .item-link .item .imege-link-1{
-	background: url(img/icons/icon-1.png) no-repeat;
+	background: url(img/icons/icon-1.png) no-repeat center;
 } 
 
 .section-1 .block-links .item-link:hover .item .imege-link-1{
-	background: url(img/icons/icon-1-w.png) no-repeat;
+	background: url(img/icons/icon-1-w.png) no-repeat center;
 }
 
 .section-1 .block-links .item-link .item .imege-link-2{
-	background: url(img/icons/icon-2.png) no-repeat;
+	background: url(img/icons/icon-2.png) no-repeat center;
 }
 .section-1 .block-links .item-link:hover .item .imege-link-2{
-	background: url(img/icons/icon-2-w.png) no-repeat;
+	background: url(img/icons/icon-2-w.png) no-repeat center;
 }
 .section-1 .block-links .item-link .item .imege-link-3{
-	background: url(img/icons/icon-3.png) no-repeat;
+	background: url(img/icons/icon-3.png) no-repeat center;
 }
 .section-1 .block-links .item-link:hover .item .imege-link-3{
-	background: url(img/icons/icon-3-w.png) no-repeat;
+	background: url(img/icons/icon-3-w.png) no-repeat center;
 }
 .section-1 .block-links .item-link .item .imege-link-4{
-	background: url(img/icons/icon-4.png) no-repeat;
+	background: url(img/icons/icon-4.png) no-repeat center;
 }
 .section-1 .block-links .item-link:hover .item .imege-link-4{
-	background: url(img/icons/icon-4-w.png) no-repeat;
+	background: url(img/icons/icon-4-w.png) no-repeat center;
 }
 .section-1 .block-links .item-link .item .imege-link-5{
-	background: url(img/icons/icon-5.png) no-repeat;
+	background: url(img/icons/icon-5.png) no-repeat center;
 }
 .section-1 .block-links .item-link:hover .item .imege-link-5{
-	background: url(img/icons/icon-5-w.png) no-repeat;
+	background: url(img/icons/icon-5-w.png) no-repeat center;
 }
 .section-1 .block-links .item-link .item .imege-link-6{
-	background: url(img/icons/icon-6.png) no-repeat;
+	background: url(img/icons/icon-6.png) no-repeat center;
 }
 .section-1 .block-links .item-link:hover .item .imege-link-6{
-	background: url(img/icons/icon-6-w.png) no-repeat;
+	background: url(img/icons/icon-6-w.png) no-repeat center;
 }
 .section-1 .block-links .item-link .item .link-title-p{
 	height: 40px;
