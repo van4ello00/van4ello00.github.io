@@ -71,6 +71,9 @@
 .wrapp_top-menu .link:last-child a{
 	box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
 }
+.wrapp_top-menu .link a:hover{
+	background-color: #f9f9f9;
+}
 
 .wrapp_top-menu{
 	justify-content: flex-end;
