@@ -480,6 +480,7 @@
 
 
 <script>
+	(function ($) {
 	$('#hide_all').readmore({
 		speed:800,
 		maxHeight:0,
@@ -490,6 +491,7 @@
 		blockCSS:'display: none; width: 100%;',
 		startOpen:false,blockProcessed:function(){},beforeToggle:function(){},afterToggle:function(){}
 		});
+	})(jQuery);
 
     
 </script>
