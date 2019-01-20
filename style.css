@@ -253,6 +253,11 @@
 .section-1 .block-links .item-link .item .imege-link-1{
 	background: url(img/icons/icon-1.png) no-repeat;
 } 
+
+.section-1 .block-links .item-link:hover .item .imege-link-1{
+	background: url(img/icons/icon-2.png) no-repeat;
+}
+
 .section-1 .block-links .item-link .item .imege-link-2{
 	background: url(img/icons/icon-2.png) no-repeat;
 }
