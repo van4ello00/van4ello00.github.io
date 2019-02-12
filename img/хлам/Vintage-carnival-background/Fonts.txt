@@ -1,9 +1,0 @@
-Fonts used in this design:
-
-Font: ChunkFive
-Author: The League of Moveable Type
-Url: http://www.fontsquirrel.com/fonts/chunkfive
-
-Font: Milkshake
-Author: Laura Worthington
-Url: https://www.fontsquirrel.com/fonts/milkshake
