@@ -1,0 +1,305 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.like_h3,
+.like_h2,
+.like_h4{
+    margin: 0 0 15px;
+}
+
+
+
+.lead {`
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    
+    color: #f8f8f8;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+ h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+
+
+/*header*/
+
+/*.intro-message{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    width: 100%;
+}*/
+
+.d_f{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.welcome-n__adventages .welcome-n-adventages__item{
+    width: 33%;
+}
+
+.welcome-n__form{
+    border: 1px solid #000;
+}
+
+.left_bg{
+    position: relative;
+}
+.left_bg:after{
+    position: absolute;
+    z-index: -3;
+    top: -444px;
+    left: -444px;
+    width: 1275px;
+    max-width: 100%;
+    height: 2164px;
+    content: '';
+    background: url(../img/1/pattern-left.png) 0 0 no-repeat;
+}
+
+
+/*smi*/
+
+.section_smi{
+    align-items: center;
+}
+
+.section_smi .item-title{
+    width: 15% !important;
+}
+
+.wrapp_slider_smi{
+    width: 85% !important;
+}
+
+.wrapp_slider_smi .owl-stage{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/*_________  secton-problem  ___________*/
+
+
+.wrapp_slider_problem{
+}
+
+.wrapp_comment-foto .title{
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapp_comment-foto .title .mark i{
+    font-size: 20px;
+}
+
+.wrapp_comment-foto .foto .wrapp_avatar{
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    border-radius: 20px;
+}
+.wrapp_comment-foto .foto .foto_avatar{
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transform: rotate(-45deg) scale(1.7); 
+}
+
+.sect_slide{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sect_slide .wrapp_sect_slide-info{
+    align-self: flex-start;
+    width: 68%;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.75);
+}
+
+.sect_slide .wrapp_sect_slide-info .wrapp_steps{
+    flex-wrap: wrap;
+}
+
+.sect_slide .wrapp_sect_slide-answer{
+    width: 29%;
+    padding: 15px;
+}
+
+.wrapp_sect_slide-info .wrapp_steps .item{
+    display: inherit;
+    width: 50%;
+}
+
+.wrapp_sect_slide-info .wrapp_steps .item .number{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #666;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.wrapp_sect_slide-info .wrapp_steps .item .step_question{
+    width: 100%;
+    max-width: 300px;
+    padding-left: 10px;
+}
+
+
+/*_______ slide sect_slide_from _______*/
+
+.why-we{
+    margin-bottom: 80px;
+    padding: 60px 0;
+    color: #fff;
+    background: url(../img/1/background.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.sect_slide_from .return-money__item{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sect_slide_from .return-money__item>div{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 11%;
+    height: 75px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 6px;
+
+}
+
+.sect_slide_from .return-money__item>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider__item .slider__top,
+.slider__item .slider__bottom{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+/*________  often_qestion  __________*/
+
+.content-section-b{
+    background: url(../img/1/pattern.png);
+}
+
+.often_question .item-question{
+    width: 70%;
+}
+.often_question .item-form{
+    width: 30%;
+}
+
+
+/*________  return-money__head  ________*/
+
+.right-wave{
+    position: relative;
+}
+.right-wave:after{
+    position: absolute;
+    z-index: -3;
+    top: -240px;
+    right: -333px;
+    width: 1275px;
+    height: 2164px;
+    content: '';
+    background: url(../img/1/pattern-left.png) 0 0 no-repeat;
+    transform: rotate(-180deg);
+}
+
+.item-slide .wrapp_cases{
+    width: 50%;
+    padding: 10px;
+}
+
+.item-slide .wrapp_cases .wrapp_block .block{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*_______   sect_treatment   _______*/
+
+.sect_treatment .item-case{
+    width: 50%; 
+    padding: 10px;
+}

@@ -1,523 +1,1273 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>fullPage.js - Parallax Extension</title>
-    <meta name="author" content="Alvaro Trigo Lopez" />
-    <meta name="description" content="Parallax Scrolling fullPage.js Extension." />
-    <meta name="keywords" content="fullpage,extension,addon,plugin,parallax,parallax scrolling, parallax snapping,scrollbar, parallax backgrounds, parallax images" />
-    <meta name="Resource-type" content="Document" />
-    <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
-    <link rel="stylesheet" type="text/css" href="examples.css" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-   
-    <!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
 
-    <style>
+    <title>это лендос</title>
+    <meta name="description" content="описание">
+    <meta name="keywords" content="ключ">
+    <!-- Bootstrap Core CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
         
-		#section1 h1{
-			-webkit-text-shadow: none;
-			text-shadow: none;
-		}
-		
-		/*
-		* Setting the backgrounds for each section / slide
-		*/
-		#section4 .fp-bg:before,
-		#section2 .fp-bg:before{
-			content: '';
-			position: absolute;
-			display: block;
-			background: rgba(173, 173, 173, 0.2);
-			top:0;
-			bottom:0;
-			height: 100%;
-			width: 100%;
-		}
-		.fp-bg{
-			background-size: cover;
-			transform: translate3d(0,0,0);
-			-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
-    		backface-visibility: hidden;
-		}
 
-		#section0 .fp-bg{
-			/*background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-1-1.jpg');*/
-			background-image: url('img/header/section0_2.svg');
-			background-position: center;
-			transform: translateX(0px) translateY(0px) !important;
-			background-size: 104%;
-		}
-		#section1 .fp-bg{
-			/*background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-1-1.jpg');*/
-			background-image: url('img/header/section_1.svg');
-			background-position: center 80%;
-			transform: translateX(0px) translateY(0px) !important;
-			background-size: 104%;
-		}
-		
+    <!-- <link href="css/my_style.css" rel="stylesheet"> -->
 
-		#section2 .fp-bg{
-			background: url('img/parallax-2.jpg') no-repeat;
-			background-position: center;
-			transform: translateX(0px) translateY(0px) !important;
-			background-size: 104%;
-		}
-		#section2 h1{
-			color: #fff;
-		}
-		#section3 .fp-bg{
-			background-image: url('img/header/section_galari.svg');
-			background-position: center;
-			transform: translateX(0px) translateY(0px) !important;
-		}
-		
-		#section4 .fp-bg{
-			background-image: url('img/parallax-4.jpg');
-			background-position: center;
-			transform: translateX(0px) translateY(0px) !important;
-		}
-		.button a.button-purchase:hover {
-			background-color: #3cc63c !important;
-			color: #fff !important;
-		}
-		.button-purchase{
-			background: #fff !important;
-			color: #000 !important;
-		}
-		.documentation a{
-			font-size: 13px;
-			margin: 20px 0;
-			padding: 0;
-			color: #222;
-		}
-		
-	</style>
+
+    <!-- Custom Fonts -->
+    <script src="https://kit.fontawesome.com/2900382c10.js"></script>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="css/iziModal.css" rel="stylesheet">
+
+    <!-- _______________________________________________________ -->
+
+
+
+    <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <!--Import materialize.css-->
+
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />   
+
 </head>
 
 <body>
-
-	<script>
-  AOS.init();
-</script>
-    <!-- <div class="actions">
-    	<div class="actions-option">
-    		<ul id="actions">
-    			<li id="turnOn" class="active">On</li>
-    			<li id="turnOff">Off</li>
-    		</ul>
-    	</div>
+    <nav>
+    <div class="nav-wrapper">
+      <div class="container"> 
+          <a href="#" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Sass</a></li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
     
-    	<div class="actions-option">
-    		Parallax offset:
-    		<select data-option="offset">
-    			<option value="30">30%</option>
-    			<option value="60" selected>62%</option>
-    			<option value="100">100%</option>
-    		</select>
-    	</div>
-    
-    	<div class="actions-option">
-    		Parallax type:
-    		<select data-option="type">
-    			<option value="reveal" selected>reveal</option>
-    			<option value="cover">cover</option>
-    		</select>
-    	</div>
-    
-    	<div class="actions-option">
-    		scrollBar:
-    		<select data-option="scrollBar">
-    			<option value="false" selected>false</option>
-    			<option value="true">true</option>
-    		</select>
-    	</div>
-    
-    	<div class="actions-option">
-    		autoScrolling:
-    		<select data-option="autoScrolling">
-    			<option value="true">true</option>
-    			<option value="false">false</option>
-    		</select>
-    	</div>
-    	<div class="actions-option actions-compatible">
-    		Compatible?
-    		<div class="note">
-    			<b class="note-title">NOT compatible with the following fullPage.js features:</b>
-    			<ul>
-    				<li>The `fp-auto-height` feature</li>
-    				<li>Offset Sections extension</li>
-    				<li>Drag And Move extension</li>
-    			</ul>
-    		</div>
-    	</div>
-    </div> -->
-    <ul id="menu">
-        <div class="svg_shade_l">
-            
-        </div>
-        <div class="logo">
-            <img src="http://www.circus.kharkov.ua/files/logo.png" alt="Головна">
-        </div>
-            <li data-menuanchor="firstPage"><a href="#firstPage">Головна</a></li>
-            <li data-menuanchor="secondPage"><a href="#secondPage">Афiша</a></li>
-            <li data-menuanchor="3rdPage"><a href="#3rdPage">Купити квiток</a></li>
-            <li data-menuanchor="4thpage"><a href="#4thpage">Галерея</a></li>
-            <li data-menuanchor="5thpage"><a href="#5thpage">Контакти</a></li>
-        <div class="svg_shade_r">
-            
-        </div>
-    </ul>
-    <div id="myContainer">
-    	<div class="section" id="section0">
-                <div class="fp-bg" id="section0"></div>
-                <div class="intro">
-                    <div class="img_svg fig_8" ><img class="animated infinite pulse delay-1s slower" src="img/header/pod_h1.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                </div>
-        </div>
-    	<div class="section" id="section1">
-                <div class="fp-bg" id="section1"></div>
-                <div class="intro">
-                    <h1>Афiша</h1>
-                    <div class="content flex">
-                    	<div class="foto_afish flex">
-                    		<div class="item af_1">
-                    			<div class="wrapp">
-                    				<div class="titel_item_afish">
-                    					«Шоу велетенських фонтанів»
-                    				</div>
-                    				<div class="bg_img">
-                    					<a href="#"><img src="img/kontent/circus_2019_01_02.jpg" alt=""></a>
-                    				</div>
-                    				
-                    			</div>
-                    		</div>
 
-                    		<!-- <div class="item af_1">
-                    			<div class="wrapp">
-                    				<div class="titel_item_afish">
-                    					«Шоу велетенських фонтанів»
-                    				</div>
-                    				<div class="bg_img">
-                    					<a href="#"><img src="img/kontent/circus_2019_01_02.jpg" alt=""></a>
-                    				</div>
-                    				
-                    			</div>
-                    		</div> -->
+    <!-- Header -->
+    <div class="intro-header">
 
-                    		
+        <div class="container">
 
-                    		
-                    	</div>
-                    	<div class="schedule_afish flex">
-                    		<p>Графік Вистав «Шоу –Велетенських фонтанів»<br>з 02 Лютого по 24 Лютого.</p>
-                    		<div class="wrapp flex">
-                    			
-                    			<div class="table">
-                    				<table border="1"><tbody><tr><td>02.02.2019р.</td><td></td><td>17.00</td></tr><tr><td>03.02.2019р.</td><td>12,00</td><td></td></tr><tr><td>09.02.2019р.</td><td>12.00</td><td>17.00</td></tr><tr><td>10.02.2019р.</td><td>12.00</td><td></td></tr><tr><td>16.02.2019р.</td><td>12.00</td><td>17.00</td></tr><tr><td>17.02.2019р.</td><td>12.00</td><td></td></tr><tr><td>23.02.2019р.</td><td>12.00</td><td>17.00</td></tr><tr><td>24.02.2019р.</td><td>12.00</td><td></td></tr></tbody></table>
-                    			</div>
-                    		</div>
-                    	</div>
-                    </div>
-                </div>
-        </div>
-        <!-- <div class="section" id="section1">
-            <div class="slide" id="slide1-1">
-                <div class="fp-bg"></div>
-                <div class="">
-                    <div class="">
-                        <h1>Афiша</h1>
-                        <p>Use `parallax: true`. Made easy.</p>
-                        <div class="button" id="download">
-                            <a href="https://gum.co/fullpageParallax" class="button-purchase">I want it!</a>
-                        </div>
-                        <p class="documentation">
-                            <a href="https://github.com/alvarotrigo/fullPage.js/wiki/Extension---Parallax">Documentation</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="slide" id="slide1-2">
-                <div class="fp-bg"></div>
-                <div class="intro">
-                    <h1>Купити квiток</h1>
-                    <img src="https://alvarotrigo.com/fullPage/extensions/imgs/parallax/trusted.png" />
-        			</div>
-                </div>
-                <div class="slide" id="slide1-3">
-                    <div class="fp-bg"></div>
-                    <div class="intro">
-                        <h1>Галерея</h1>
-                        <p>Extension issues are supported at no extra cost!</p>
-                    </div>
-                </div>
-            </div> -->
-            <div class="section" id="section2">
-                <div class="fp-bg" id="section2"></div>
-                <div class="intro">
-                    <h1>Купити квiток</h1>
-                    <div class="content">
-                    	<div class="wrapp flex">
-                    		<div class="tickets_img">
-                    			<a href="https://goo.gl/CgtDVW">
-                    				<img class="animated infinite pulse slow" src="img/header/tickets.svg" alt="">
-                    			</a>
-                    		</div>
-                    		<div class="shem_zal">
+            <div class="row">
+                <div class="col s12">
+                    <div class="intro-message">
 
-                    			<h2>Вартість квитків</h2>
-                    			<a href="http://www.circus.kharkov.ua/files/shema-cena.jpg"><img src="img/header/img_link_sena.svg" alt=""></a>
-                    		</div>
-                    	</div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="section3">
-                <div class="fp-bg" id="section3"></div>
-                <div class="intro">
-                    <h1>Галерея</h1>
-                    <div class="galary">
-                    	<div class="wrapp flex">
-                    		<a class="item" href=""><img src="img/galary/001.jpg" alt=""></a>
-                    		<a class="item" href=""><img src="img/galary/002.jpg" alt=""></a>
-                    		<a class="item" href=""><img src="img/galary/003.jpg" alt=""></a>
-                    		<a class="item" href=""><img src="img/galary/004.jpg" alt=""></a>
-                    		<a class="item" href=""><img src="img/galary/005.jpg" alt=""></a>
-                    		<a class="item" href=""><img src="img/galary/006.jpg" alt=""></a>
-                    		<a class="item" href=""><img src="img/galary/007.jpg" alt=""></a>
-                    		<a class="item" href=""><img src="img/galary/008.jpg" alt=""></a>
-                    	</div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="section" id="section3">
-                <div class="slide" id="slide3-1">
-                    <div class="fp-bg"></div>
-                    <div class="intro">
-                        <h1>Галерея</h1>
-                        <p>Totally configurable.</p>
-                        <p>For sections & slides! </p>
-                    </div>
-                </div>
-                <div class="slide" id="slide3-2">
-                    <div class="fp-bg"></div>
-                    <div class="intro">
-                        <h1>GUARRANTEE</h1>
-                        <p>30 days money back guarratee if no domain was activated.</p>
-                    </div>
-                </div>
-                <div class="slide" id="slide3-3">
-                    <div class="intro">
-                        <div class="fp-bg"></div>
-                        <h1>TRUSTED</h1>
-                        <p>Join thoudands of other developers who trusted fullPage.js extensions!</p>
-                    </div>
-                </div>
-                <div class="slide" id="slide3-4">
-                    <div class="fp-bg"></div>
-                    <div class="intro">
-                        <h1>DOCUMENTED</h1>
-                        <p>If fullPage.js is known for one thing it's for its great documentation!</p>
-                    </div>
-                </div>
-            </div> -->
-            <div class="section" id="section4">
-                <div class="fp-bg"></div>
-                <div class="intro">
-                    <h1>Контакти</h1>
-                    <div class="content">
-                    	<div class="wrapp flex" style="margin-top: 10%;">
-                    		<div class="item adress flex">
-                    			<p>+380 (57) 733-08-40</p>
-                    			<p>+380 (68) 746-93-62</p>
-                    			<p>
-                    				<a href="mailto:info@circus.kharkov.ua">info@circus.kharkov.ua</a>
-                    			</p>
-                    			<p>Харків площа Бугримової, 1</p>
-                    			<p>пн - сб: 10:00-18:00</p>
-                    			<p>нд: 10:00-17:00</p>
-                    		</div>
-                    		<div class="item map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10261.702123026746!2d36.228645!3d49.984631!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb05725a20065b857!2z0KXQsNGA0YzQutC-0LLRgdC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0YbQuNGA0Lo!5e0!3m2!1sru!2sru!4v1550193225797" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-                    	</div>
-                    	<div class="img_svg fig_6"><img src="img/header/line.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                    	<div class="img_svg fig_9"><img src="img/header/shar.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="section" id="section5">
-                <div class="fp-bg"></div>
-                <div class="intro">
-                    <h1>Контакти</h1>
-                    <div class="wrapper">
-                        <section class="parallax-container">
-                            <div class="parallax">
-                                <div class="title" class="wrapper">
-                                    <h1>img</h1>
-                                    <div>
-                                        <div class="line"></div>
-                                        <span>something about this hills</span>
-                                        <div class="line"></div>
+                        <div class="welcome-n__info-wrapper col s8">
+                            <p class="welcome-n__title">Вернём деньги от брокера-мошенника <br><span><b>за два месяца без предоплат</b></span></p>
+                            <div class="welcome-n__adventages welcome-n-adventages d_f">
+                                <div class="welcome-n-adventages__item">
+                                    <div class="welcome-n-adventages__icon ">
+                                        <i class="far fa-clock"></i>
                                     </div>
-            
-                                    <div class="img_svg fig_1"> <img src="img/header/clown.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                                    <div class="img_svg fig_2"><img src="img/header/gimnast.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                                    <div class="img_svg fig_3"><img src="img/header/slonik.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                                    <div class="img_svg fig_4"><img src="img/header/tickets.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                                    <div class="img_svg fig_5"><img src="img/header/cupol.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                                    <div class="img_svg fig_6"><img src="img/header/line.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                                    <div class="img_svg fig_7"><img src="img/header/line_2.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                                    <div class="img_svg fig_8"><img src="img/header/pod_h1.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
-                                    <div class="img_svg fig_9"><img src="img/header/shar.svg" onerror="this.onerror=null; this.src='image.png'" alt=""></div>
+                                    <p class="welcome-n-adventages__title">Возврат от 1 дня  <br>до 2-х месяцев</p>
+                                </div>
+                                <div class="welcome-n-adventages__item">
+                                    <div class="welcome-n-adventages__icon small">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <p class="welcome-n-adventages__title">Возврат всей суммы <br>вам на карту</p>
+                                </div>
+                                <div class="welcome-n-adventages__item">
+                                    <div class="welcome-n-adventages__icon ">
+                                        <i class="fas fa-file-signature"></i>
+                                    </div>
+                                    <p class="welcome-n-adventages__title">Работаем по договору</p>
                                 </div>
                             </div>
-                        </section>
-                        
+
+                            <div class="welcome-n__form js-welcome-n-form">
+
+                                <form class="form">
+
+                                    <div class="col s12">
+                                        <div class="input-field col s6">
+                                          <input id="last_name" type="text" class="validate">
+                                          <label for="last_name">Ваше имя</label>
+                                        </div>
+
+                                        <div class="input-field col s6">
+                                          <input id="last_name" type="text" class="validate">
+                                          <label for="last_name">Ваш телефон</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s6">
+                                          <input id="email" type="text" class="validate">
+                                          <label for="email">Ваш email</label>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <span>Ущерб</span>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>До 100 000 руб.</span>
+                                        </label>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>От 100 000 руб.</span>
+                                        </label>
+                                    </div>
+                                    <div class="form__wrapper">
+                                        <div class="form__item form__item--checkbox">
+
+                                            <p>
+                                              <label>
+                                                <input type="checkbox" checked="checked" />
+                                                <span>Я даю согласие на обработку персональных данных</span>
+                                              </label>
+                                            </p>
+                                            <button class="btn waves-effect waves-light" type="submit" name="action" disabled="disabled">Получить консультацию</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="welcome-n-slider__info js-welcome-n-slider-info col s4" >
+                            <p class="welcome-n-slider__name">Мухаметзянов Марат</p>
+                            <p>Генеральный директор 
+                                <br> "ЮК Луна"</p>
+                            <p class="welcome-n-slider__refund">Ежегодно возвращаем для наших клиентов более 250 000 000 рублей</p>
+                            <a href="#" data-izimodal-open="#modal-welcome-video-0" class="welcome__play-new play-video">
+                                <i class="zmdi zmdi-play"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
+
         </div>
-        <input type="hidden" id="_4" value="3" />
-        <!-- WARNING!! -->
-        <!-- This file is limited. You can't use it to test the extension! It won't work. -->
-        <!-- You have to purchase it to try it as detailed in the FAQs:  -->
-        <!-- https://alvarotrigo.com/fullPage/extensions/faqs.html-->
-        <script type="text/javascript" src="fullpage.parallax.limited.min.js"></script>
-        <!-- END WARNING-->
-        <script type="text/javascript" src="fullpage.extensions.min.js"></script>
+        <!-- /.container -->
 
-       
-     
-            <!-- DO NOT MODIFY -->
-            <!-- End Facebook Pixel Code -->
-            <script type="text/javascript">
-            // Initializing fullpage.js
-            initialize(false);
+    </div>
+    <!-- /.intro-header -->
 
-            function initialize(hasScrollBar) {
-                new fullpage('#myContainer', {
-                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage'],
-                    menu: '#menu',
-                    slidesNavigation: true,
-                    parallax: true,
-                    parallaxKey: 'YWx2YXJvdHJpZ28uY29tXzlNZGNHRnlZV3hzWVhnPTFyRQ==',
-                    parallaxOptions: {
-                        type: 'reveal',
-                        percentage: 62,
-                        property: 'translate'
-                    },
-                    scrollingSpeed: 1000,
-                    autoScrolling: true,
-                    scrollBar: true,
-                    fitToSection: false
-                });
-            }
+    <!-- Page Content -->
+    <div class="left_bg"></div>
+    <div class="content-section-a">
 
-            document.getElementById('turnOn').addEventListener('click', function() {
-                removeClass(document.getElementById('actions').querySelector('li.active'), 'active');
-                addClass(this, 'active');
+        <div class="container">
 
-                fullpage_api.parallax.init();
-            });
+            <div class="col s12">
+                <div class="section_smi d_f">
+                    <div class="item item-title">
+                        <p>Сми о нас</p>
+                    </div>
+                    <div class="wrapp_slider_smi">
+                        <div class="item owl-carousel owl-theme slide_one" id="section_smi">
+                            <div class="sect-slid 1 carousel-item">
+                                <a href="#" class="open-media-article" data-izimodal-open="#media-article-0" data-izimodal-transitionin="fadeInDown">
+                                    <img src="img/Aif_logo.svg_-min.png" alt title width="240">
+                                </a>
+                        
+                                <div id="media-article-0" class="js-modal modal modal--media">
+                                <button class="modal__close" data-izimodal-close data-izimodal-transitionout="fadeOutDown">
+                                    <i class="zmdi zmdi-close"></i>
+                                </button>
+                                <div class="modal__pattern modal__head">
+                                    <img src="img/Aif_logo.svg_-min.png" alt title width="150">
+                                    <p class="date">13/09/2018</p>
+                                </div>
+                                <div class="modal__content modal__content--media">
+                                    <h2 class="material_title increase_text">Зеркальные сайты и «шпионы». Пять самых распространенных обманов в сети.</h2>
+                                    <p>Каждый день в Интернете совершаются миллионы сделок. И всегда есть риск оказаться в числе тех, кто попался на уловки и перевёл деньги на счет мошенников. О том, как распознать манипуляции обманщиков и избежать потери денег, «АиФ-Юг» рассказал <strong>юрист и директор юридической компании Марат Мухаметзянов.</strong></p><h3>1. Фейковые магазины</h3><p><strong>Торговля некачественными товарами, неоказание услуг после получения предоплаты, предложения по супер низкой цене.</strong></p><p>Интернет предоставляет потребителю огромный выбор товаров и услуг, которые можно заказать, не выходя из дома &#8211; это крайне удобно. Однако не всегда продавец добросовестно выполняет свои обязанности. В последнее время участились случаи, когда покупатель оплачивает товар или услугу и не получает обещанного.</p><p>Например, вы заказали дизайнерские часы, но взамен получили модель абсолютно другого качества и с ремешком из дешевого кожзаменителя. Зачастую можно предупредить такую ситуацию, внимательно изучив сайт &#8211; магазин продавца, почитать отзывы на сторонних ресурсах и сравнить цену у других продавцов. Не стоит рассчитывать на ошеломительные скидки, это должно вызвать подозрение и желание ещё раз проверить правильность своего выбора. Случается и так, что продавец вовсе не отправляет товар после получения предварительной оплаты.</p><p><strong>Что делать?</strong></p><p>«И в том, и в другом случае, в начале, вам стоит попытаться разрешить вопрос с продавцом, отправить ему претензию или обратиться в клиентскую поддержку на сайте, где была произведена покупка, &#8211; объясняет юрист. &#8211; Также обстоит дело и с оплатой с использованием кошельков (Яндекс Кошелек, Qiwi и т.д.) &#8211; необходимо написать в техническую поддержку, контактные данные можно найти на официальных сайтах платежных сервисов. Если оплата происходила по банковской карте, вы можете обратиться в банк и написать заявление на оспаривание транзакций по факту неоказания услуг, приложив все имеющиеся доказательства».</p><h3>2. Вирусные программы-шпионы</h3><p><strong>Кража персональных данных, в том числе с использованием вирусных программ. </strong>Как правило, происходит после посещения ненадежных сайтов, скачивания из непроверенных источников.</p><p>Мировая сеть охватывает все области нашей жизни и предоставляет собой огромный кладезь полезной и не очень информации. Но помимо инструмента получения информации, интернет является инструментом ее сбора. В первую очередь, каждая поисковая система собирает информацию о совершаемых запросах, для дальнейшего составления рекламного ряда, который может заинтересовать.</p><p>На других сайтах, например при прохождении регистрации, могут быть запрошены личные данные (в том числе телефон, адрес проживания) &#8211; как правило, об этом оповещает обязательная к заполнению строка «Согласие на обработку персональных данных». Но опасность кроется в том, что базы данных могут быть взломаны или проданы третьим лицам.</p><p>Также встречаются ситуации, когда на сайте требуют ввести номер телефона для скачивания файла. Но вместо файла вы получаете подключение платной подписки на ваш номер телефона, о которой узнаете уже в момент списания денег.</p><p>Хуже дела обстоят, когда вам все-таки удается скачать файл и вместе с ним вы устанавливаете себе вирусную программу, которая также начинается собирать о вас информацию, в первую очередь, отслеживает вашу деятельность в онлайн-банках, копирует коды доступа и передает их мошенникам.</p><p><strong>Что делать?</strong></p><p>«Банально, но чтобы не попасться на удочку мошенников достаточно быть внимательным, &#8211; говорит Марат Мухаметзянов. &#8211; А также иметь антивирусные программы, обновленные до последней версии. Но если у вас всё же были списаны деньги со счета, необходимо обратиться в банк (или к оператору связи) и отменить операцию. Обязательным шагом станет вызов программиста, который удалит вирусные программы-шпионы с вашего устройства. Однако перед очисткой следует сохранить все доказательства совершения мошеннических действий. Если через банк (оператора) вернуть деньги не получилось или вас начали шантажировать, то наилучшим решением станет обращение в полицию».</p><h3>3. Брокеры, криптовалютные биржи</h3><p>С развитием Интернета совершенствуются и виды мошенничества. Одно из таких направлений &#8211; лжеброкерские компании, которые создают иллюзию ведения торгов на рынке Forex или на новомодных криптовалютных биржах. Как правило, сначала человеку звонят и предлагают дополнительный заработок, далее предоставляют в пользование онлайн платформу.</p><p>Затем мошенники используют одну из представленных схем: не выводят средства с платформы или «сливают» все имеющиеся средства, открывая и закрывая сделки. Обе схемы сопровождаются требованием пополнить торговый счет, угрозами и психологическими уловками.</p><p>В стране сейчас сохраняется относительно низкий уровень финансовой образованности, поэтому люди доверяют свои сбережения брокерам-мошенникам.</p><p><strong>Что делать?</strong></p><p>«Существуют некоторые правила выбора брокера, &#8211; рассказывает эксперт. &#8211; В первую очередь, необходимо убедиться в наличии лицензии у брокера. Почти все брокерские компании зарегистрированы в оффшорных зонах и нужно всегда уточнять, есть ли у них лицензия ЦБ РФ, потому, что только при наличии этой лицензии у брокера есть право осуществлять деятельность на территории России. Информация о лицензированных брокерах также опубликована на сайте Центрального Банка. В случае возникновения спорной ситуации можно будет обратиться с жалобой в ЦБ.</p><p>Во-вторых, представительство на территории РФ также станет плюсом для брокерской компании, так как компания должна соблюдать требование российского законодательства о создании юридического лица (представительства) для зарубежных форекс-компаний.</p><p>В-третьих, наиболее безопасным способом внесения средств на торговый счет является оплата с банковской карты, которая сопровождается отправкой смс-подтверждения вам на телефон. В этом случае, вы сможете вернуть деньги в рамках банковской процедуры Charge-back.</p><p>Но в любом случае, если вас обманул брокер, не стоит скрывать эту информацию, а нужно обратиться с заявлением в полицию &#8211; так вы поможете не только себе, но и убережете других людей от таких же ошибок».</p><h3>4. Онлайн-казино, зеркальные сайты</h3><p>В сети можно не только совершать покупки, не выходя из дома, но и пользоваться ресурсами азартно-развлекательного характера. Конечно, речь идет о спорной сфере онлайн-казино.</p><p>Одни категорически настроены против азартных игр в сети, придерживаются идеи, что заработать в казино невозможно. Другие, помимо возможности заработать, находят в этом удовольствие, новые ощущения.</p><p>Но вместо рассуждений на эту тему, стоит обратить внимание на тот факт, что помимо лицензионных казино существует огромное количество зеркальных сайтов, которые только выглядят как сайты-казино, а на самом деле это специально разработанные копии, цель которых – завладеть деньгами пользователя.</p><p><strong>Что делать?</strong></p><p>«К сожалению, вернуть деньги от такого рода мошенников практически нереально, потому что не представляется возможным найти организаторов &#8211; сайты зарегистрированы на подставные лица, деньги зачастую уходят в офшорные банки. – Объясняет юрист. &#8211; Единственный вариант разрешения ситуации &#8211; написать заявление в полицию с просьбой провести расследование по факту интернет – мошенничества».</p><h3>5. Онлайн-попрошайничество</h3><p>Еще одним видом обмана в Интернете, заимствованным из реальной жизни, является онлайн-попрошайничество и спекуляция на страданиях других людей.</p><p>Наверняка, каждый пользователь встречался с просьбами о помощи детям, животным, пожилым людям. Желание поучаствовать в благотворительной деятельности похвально, однако стоит помнить, что не все «нуждающиеся» являются таковыми.</p><p>К сожалению, мошенники без стеснения используют чужую боль для собственного обогащения, поэтому необходимо тщательно проверять документы и мотивы получателя пожертвований, как бы цинично это не звучало.</p><p><strong>Что делать?</strong></p><p>«Если вы все-таки перечислили деньги мошенникам, так же следует обратиться в полицию, предоставив краткое объяснение ситуации и детали совершения платежа, &#8211; подводит итог Марат Мухаметзянов.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="sect-slid 2 carousel-item">
+                                <a href="#" class="open-media-article" data-izimodal-open="#media-article-1" data-izimodal-transitionin="fadeInDown">
+                                    <img src="img/clerc-min.png" alt title width="240">
+                                </a>
+                        
+                                <div id="media-article-1" class="js-modal modal modal--media">
+                                <button class="modal__close" data-izimodal-close data-izimodal-transitionout="fadeOutDown">
+                                    <i class="zmdi zmdi-close"></i>
+                                </button>
+                                <div class="modal__pattern modal__head">
+                                    <img src="img/clerc-min.png" alt title width="150">
+                                    <p class="date">24/07/2018</p>
+                                </div>
+                                <div class="modal__content modal__content--media">
+                                    <h2>«Личная бухгалтерия»: как процедура Chargeback вернет ваши деньги, если пришел некачественный товар.</h2>
+                                    <p>Можно ли вернуть свои деньги за товар, купленный в интернете, если он пришёл не в том виде, как было заявлено в описании? Или в ситуациях, когда оплаченная покупка по каким-либо причинам не была вам доставлена, либо произошло ошибочное двойное списание суммы со счета?</p><p>Мало кто знает, но решение в таких случаях существует. Марат Мухаметзянов, юрист и директор юридической компании «Луна», рассказывает, как работает&nbsp;банковская процедура&nbsp;<em>chargeback,&nbsp;</em>и каким образом можно вернуть собственные деньги.</p><h2>При каких условиях можно воспользоваться Chargeback</h2><p>Процедура возврата денежных средств применима ко всем покупкам, оплаченным с помощью кредитной или дебетовой карты.</p><p>К Chargeback можно обратиться и в случаях, если услуга или товар были предоставлены вам не в полном объёме – но только при условии, что вы совершали не денежный перевод, а именно покупку, и с ее момента прошло не более 540 дней.</p><blockquote><p>Swift-переводы, платежи через электронные кошельки и платежные системы Qiwi и т.п., не подпадают под правила процедуры Chargeback.</p></blockquote><h2>В чем заключается процедура Chargeback?</h2><p>В первую очередь клиент должен посетить банк-эмитент (банк, выпустивший его карту) и получить расширенную выписку по карте, с указанием ее назначения и получателя платежа.</p><p>На основании этого документа заполнить специальную банковскую форму и в отдельном заявлении описать произошедшую ситуацию. Затем – приложить факты, подтверждающие, что услуга или товар действительно оказались дефектными. В качестве таких доказательств может выступить:</p><ul><li>переписка или записи разговоров с продавцом;</li><li>точное описание услуг, которые обещали предоставить;</li><li>договор;</li><li>список того, что клиенту не было фактически оказано;</li><li>фотографии и скриншоты.</li></ul><p>Готовый пакет документов будет рассмотрен банком и, при положительном решении, перенаправлен в платежную систему. Оттуда заявление передается в банк-эквайер (банк, который обслуживает продавца услуг/товаров) – а уже он уведомляет своего клиента о том, что была инициирована процедура chargeback и просит предоставить ответ на заявление покупателя.</p><p>Если доказательства того, что товар или услуга были предоставлены в полной мере, у продавца отсутствуют, то средства списываются с его счета в банке-эквайера и возвращаются клиенту той же транзакцией. В выписке банковских операций это отражается как возврат. В среднем сроки осуществления процедуры занимают от 10 до 60 дней.</p><p>В случае если продавец предоставляет доказательства своей правоты и отказывает в возврате, то эта информация опять поступает в платежную систему и обратно в банк-эмитент. Он, в свою очередь, оповещает клиента о решении и зачастую предлагает подать заявление повторно, предоставив дополнительные доказательства и документы.</p><blockquote><p>Если во второй раз приходит отказ, то клиент может обратиться в арбитраж платежной системы, и в этом случае «судьей» будет выступать Visa или Mastercard.</p></blockquote><p>Она и примет решение: оспорить транзакции или оставить денежные средства продавцу. Если клиент решает начать разбирательство, он должен оплатить определенную сумму за каждую транзакцию в адрес платежной системы.</p><h2>Особенности предоставления услуги</h2><p>Важно учесть, что не все финансово-кредитные организации принимают заявления на оспаривание транзакций, так как согласно п. 1.25 Положения ЦБ РФ 383-П от 19.06.2012 проблема, возникшая не по вине банка, должна решаться сторонами самостоятельно. Но, например, Сбербанк в большинстве случаев идет навстречу клиентам, принимает и перенаправляет обращение.</p><p>Это же касается и платежных систем.</p><blockquote><p>В настоящий момент только Visa занимается оспариванием транзакций клиентов из России, тогда как Mastercard с апреля 2017 года не принимает подобные заявления.</p></blockquote><p>Однако в октябре 2018-го ожидается изменение в правилах, которое упростит процедуру chargeback и снова позволит клиентам Mastercard возвращать свои деньги за неоказанные услуги или некачественные товары.</p><p>Chargeback – это современный финансовый инструмент, призванный защитить покупателя от недобросовестных продавцов и различных рисков приобретения товаров и услуг с помощью кредитной/дебетовой карты. Вопросами оспаривания транзакций занимаются банки и платежные системы: при положительном решении процедура возврата средств занимает в среднем от 10 дней до 2 месяцев.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="sect-slid 3 carousel-item">
+                                <a href="#" class="open-media-article" data-izimodal-open="#media-article-2" data-izimodal-transitionin="fadeInDown">
+                                    <img src="img/logo-1-min.png" alt title width="240">
+                                </a>
+                        
+                                <div id="media-article-2" class="js-modal modal modal--media">
+                                <button class="modal__close" data-izimodal-close data-izimodal-transitionout="fadeOutDown">
+                                    <i class="zmdi zmdi-close"></i>
+                                </button>
+                                <div class="modal__pattern modal__head">
+                                    <img src="img/logo-1-min.png" alt title width="150">
+                                    <p class="date">30/09/2018</p>
+                                </div>
+                                <div class="modal__content modal__content--media">
+                                    <h2>Большое число туристов купили путевки у интернет-мошенников в отели Абхазии.</h2><p>Число купивших фальшивые онлайн-путевки в отели Абхазии летом нынешнего года достигло нескольких сотен. Группа обманутых туристов написала письмо президенту России с просьбой проконтролировать расследование. Некоторые абхазские отели вызвались принять обманутых отдыхающих бесплатно.</p><p>Схема мошенников была несложной: они создали сайт, где публиковали рекламу об отдыхе в отелях Абхазии с указанием телефонов для бронирования. Чтобы получить бронь, туристам надо было внести полную стоимость путевки. После оплаты мошенники переставали выходить на связь с клиентами.</p><p>Все началось с того, что еще весной в отдел полиции №6 УМВД России по городу Чебоксары обратилась молодая пара, которая стала жертвой мошенничества при покупке туристической путевки. 34-летняя девушка и 37-летний мужчина запланировали совместный отдых в Абхазии. В Интернете потерпевшие нашли объявление о сдаваемом номере в пансионате, расположенном на берегу Черного моря. Созвонились с дававшим это объявление человеком и перевели ему более 64 тыс. руб. Только после этого пара прочитала отзывы других пользователей и поняла, что деньги они перечислили мошеннику.</p><p>К проверке МВД Абхазии были подключены смежные ведомства из числа сотрудников МВД России. Безусловно, найти интернет-мошенников по уже провернутым с их стороны делам не так просто. Но здесь уже во многом идет работа на опережение. Так, на днях первый заместитель министра внутренних дел Абхазии Казбек Кишмахов рассказал, что правоохранительным органам удалось предотвратить около 150 случаев мошеннических действий по отношению к туристам в 2018 году.</p><p>Между тем эксперты предупреждают, что лучшая защита от интернет-мошенников – профилактика.</p><p>Так, по словам юриста, директора юридической компании «Луна» Марата Мухаметзянова, в первую очередь, потенциальному покупателю нужно изучить сторонние форумы и проверить реальные отзывы о компании, которая предоставляет свои услуги. «Сейчас есть ряд порталов, где можно найти отзывы о туристических операторах. Наличие исключительно положительных отзывов, как и очень низкие цены должны вызвать подозрение», – пояснил он «Финансовой газете».</p><p>Также, по мнению эксперта, стоит внимательно ознакомиться со способами оплаты на сайте продавца. «Наличие большого ряда систем проведения платежа (например, оплата через «QIWI Кошелек», сервисы «Яндекса» и т.&nbsp;д.) говорит о том, что в случае мошенничества у вас останется возможность вернуть деньги, обратившись в адрес платежных систем, – говорит Мухаметзянов. – Однако наиболее безопасным является оплата с банковской карты, которая сопровождается отправкой СМС-подтверждения вам на телефон. В этом случае можно вернуть деньги в рамках банковской процедуры Charge-back».</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="sect-slid 4 carousel-item">
+                                <a href="#" class="open-media-article" data-izimodal-open="#media-article-3" data-izimodal-transitionin="fadeInDown">
+                                    <img src="img/Rambler_full_logo2-min.png" alt title width="240">
+                                </a>
+                        
+                                <div id="media-article-3" class="js-modal modal modal--media">
+                                <button class="modal__close" data-izimodal-close data-izimodal-transitionout="fadeOutDown">
+                                    <i class="zmdi zmdi-close"></i>
+                                </button>
+                                <div class="modal__pattern modal__head">
+                                    <img src="img/Rambler_full_logo2-min.png" alt title width="150">
+                                    <p class="date">13/09/2018</p>
+                                </div>
+                                <div class="modal__content modal__content--media">
+                                    <h2 class="material_title increase_text">Зеркальные сайты и «шпионы». Пять самых распространенных обманов в сети.</h2><p>Каждый день в Интернете совершаются миллионы сделок. И всегда есть риск оказаться в числе тех, кто попался на уловки и перевёл деньги на счет мошенников. О том, как распознать манипуляции обманщиков и избежать потери денег, «АиФ-Юг» рассказал&nbsp;<strong>юрист и директор юридической компании Марат Мухаметзянов.</strong></p><h3>1. Фейковые магазины</h3><p><strong>Торговля некачественными товарами, неоказание услуг после получения предоплаты, предложения по супер низкой цене.</strong></p><p>Интернет предоставляет потребителю огромный выбор товаров и услуг, которые можно заказать, не выходя из дома – это крайне удобно. Однако не всегда продавец добросовестно выполняет свои обязанности. В последнее время участились случаи, когда покупатель оплачивает товар или услугу и не получает обещанного.</p><p>Например, вы заказали дизайнерские часы, но взамен получили модель абсолютно другого качества и с ремешком из дешевого кожзаменителя. Зачастую можно предупредить такую ситуацию, внимательно изучив сайт – магазин продавца, почитать отзывы на сторонних ресурсах и сравнить цену у других продавцов. Не стоит рассчитывать на ошеломительные скидки, это должно вызвать подозрение и желание ещё раз проверить правильность своего выбора. Случается и так, что продавец вовсе не отправляет товар после получения предварительной оплаты.</p><p><strong>Что делать?</strong></p><p>«И в том, и в другом случае, в начале, вам стоит попытаться разрешить вопрос с продавцом, отправить ему претензию или обратиться в клиентскую поддержку на сайте, где была произведена покупка, – объясняет юрист. – Также обстоит дело и с оплатой с использованием кошельков (Яндекс Кошелек, Qiwi и т.д.) – необходимо написать в техническую поддержку, контактные данные можно найти на официальных сайтах платежных сервисов. Если оплата происходила по банковской карте, вы можете обратиться в банк и написать заявление на оспаривание транзакций по факту неоказания услуг, приложив все имеющиеся доказательства».</p><h3>2. Вирусные программы-шпионы</h3><p><strong>Кража персональных данных, в том числе с использованием вирусных программ.&nbsp;</strong>Как правило, происходит после посещения ненадежных сайтов, скачивания из непроверенных источников.</p><p>Мировая сеть охватывает все области нашей жизни и предоставляет собой огромный кладезь полезной и не очень информации. Но помимо инструмента получения информации, интернет является инструментом ее сбора. В первую очередь, каждая поисковая система собирает информацию о совершаемых запросах, для дальнейшего составления рекламного ряда, который может заинтересовать.</p><p>На других сайтах, например при прохождении регистрации, могут быть запрошены личные данные (в том числе телефон, адрес проживания) – как правило, об этом оповещает обязательная к заполнению строка «Согласие на обработку персональных данных». Но опасность кроется в том, что базы данных могут быть взломаны или проданы третьим лицам.</p><p>Также встречаются ситуации, когда на сайте требуют ввести номер телефона для скачивания файла. Но вместо файла вы получаете подключение платной подписки на ваш номер телефона, о которой узнаете уже в момент списания денег.</p><p>Хуже дела обстоят, когда вам все-таки удается скачать файл и вместе с ним вы устанавливаете себе вирусную программу, которая также начинается собирать о вас информацию, в первую очередь, отслеживает вашу деятельность в онлайн-банках, копирует коды доступа и передает их мошенникам.</p><p><strong>Что делать?</strong></p><p>«Банально, но чтобы не попасться на удочку мошенников достаточно быть внимательным, – говорит Марат Мухаметзянов. – А также иметь антивирусные программы, обновленные до последней версии. Но если у вас всё же были списаны деньги со счета, необходимо обратиться в банк (или к оператору связи) и отменить операцию. Обязательным шагом станет вызов программиста, который удалит вирусные программы-шпионы с вашего устройства. Однако перед очисткой следует сохранить все доказательства совершения мошеннических действий. Если через банк (оператора) вернуть деньги не получилось или вас начали шантажировать, то наилучшим решением станет обращение в полицию».</p><h3>3. Брокеры, криптовалютные биржи</h3><p>С развитием Интернета совершенствуются и виды мошенничества. Одно из таких направлений – лжеброкерские компании, которые создают иллюзию ведения торгов на рынке Forex или на новомодных криптовалютных биржах. Как правило, сначала человеку звонят и предлагают дополнительный заработок, далее предоставляют в пользование онлайн платформу.</p><p>Затем мошенники используют одну из представленных схем: не выводят средства с платформы или «сливают» все имеющиеся средства, открывая и закрывая сделки. Обе схемы сопровождаются требованием пополнить торговый счет, угрозами и психологическими уловками.</p><p>В стране сейчас сохраняется относительно низкий уровень финансовой образованности, поэтому люди доверяют свои сбережения брокерам-мошенникам.</p><p><strong>Что делать?</strong></p><p>«Существуют некоторые правила выбора брокера, – рассказывает эксперт. – В первую очередь, необходимо убедиться в наличии лицензии у брокера. Почти все брокерские компании зарегистрированы в оффшорных зонах и нужно всегда уточнять, есть ли у них лицензия ЦБ РФ, потому, что только при наличии этой лицензии у брокера есть право осуществлять деятельность на территории России. Информация о лицензированных брокерах также опубликована на сайте Центрального Банка. В случае возникновения спорной ситуации можно будет обратиться с жалобой в ЦБ.</p><p>Во-вторых, представительство на территории РФ также станет плюсом для брокерской компании, так как компания должна соблюдать требование российского законодательства о создании юридического лица (представительства) для зарубежных форекс-компаний.</p><p>В-третьих, наиболее безопасным способом внесения средств на торговый счет является оплата с банковской карты, которая сопровождается отправкой смс-подтверждения вам на телефон. В этом случае, вы сможете вернуть деньги в рамках банковской процедуры Charge-back.</p><p>Но в любом случае, если вас обманул брокер, не стоит скрывать эту информацию, а нужно обратиться с заявлением в полицию – так вы поможете не только себе, но и убережете других людей от таких же ошибок».</p><h3>4. Онлайн-казино, зеркальные сайты</h3><p>В сети можно не только совершать покупки, не выходя из дома, но и пользоваться ресурсами азартно-развлекательного характера. Конечно, речь идет о спорной сфере онлайн-казино.</p><p>Одни категорически настроены против азартных игр в сети, придерживаются идеи, что заработать в казино невозможно. Другие, помимо возможности заработать, находят в этом удовольствие, новые ощущения.</p><p>Но вместо рассуждений на эту тему, стоит обратить внимание на тот факт, что помимо лицензионных казино существует огромное количество зеркальных сайтов, которые только выглядят как сайты-казино, а на самом деле это специально разработанные копии, цель которых – завладеть деньгами пользователя.</p><p><strong>Что делать?</strong></p><p>«К сожалению, вернуть деньги от такого рода мошенников практически нереально, потому что не представляется возможным найти организаторов – сайты зарегистрированы на подставные лица, деньги зачастую уходят в офшорные банки. – Объясняет юрист. – Единственный вариант разрешения ситуации – написать заявление в полицию с просьбой провести расследование по факту интернет – мошенничества».</p><h3>5. Онлайн-попрошайничество</h3><p>Еще одним видом обмана в Интернете, заимствованным из реальной жизни, является онлайн-попрошайничество и спекуляция на страданиях других людей.</p><p>Наверняка, каждый пользователь встречался с просьбами о помощи детям, животным, пожилым людям. Желание поучаствовать в благотворительной деятельности похвально, однако стоит помнить, что не все «нуждающиеся» являются таковыми.</p><p>К сожалению, мошенники без стеснения используют чужую боль для собственного обогащения, поэтому необходимо тщательно проверять документы и мотивы получателя пожертвований, как бы цинично это не звучало.</p><p><strong>Что делать?</strong></p><p>«Если вы все-таки перечислили деньги мошенникам, так же следует обратиться в полицию, предоставив краткое объяснение ситуации и детали совершения платежа, – подводит итог Марат Мухаметзянов.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            document.getElementById('turnOff').addEventListener('click', function() {
-                removeClass(document.getElementById('actions').querySelector('li.active'), 'active');
-                addClass(this, 'active');
+        </div>
+        <!-- /.container -->
 
-                fullpage_api.parallax.destroy();
-            });
+    </div>
+    <!-- /.content-section-a -->
 
-            // Applying the different options when changing the select boxes
-            document.querySelectorAll('select').forEach(function(selectBox) {
-                selectBox.addEventListener('change', function() {
+    <div class="content-secton-problem">
+        <div class="container">
+            <div class="col s12">
+                <h3>Какие проблемы мы решаем</h3>
+            </div>
 
-                    var fullPageOption = this.getAttribute('data-option');
-                    var value = this.value;
-
-                    if (fullPageOption === 'offset') {
-                        fullpage_api.parallax.setOption('offset', value);
-                    } else if (fullPageOption === 'type') {
-                        fullpage_api.parallax.setOption('type', value);
-                    } else if (fullPageOption === 'autoScrolling') {
-                        fullpage_api.setAutoScrolling(value === 'true');
-                    }
-
-                    // scrollBar
-                    // Because there's no method `setScrollBar` we have to destryo and initialice fullPage.js again
-                    // but this time we'll initialice it again with the scrollBar:true option
-                    else {
-                        fullpage_api.destroy('all');
-                        initialize(value === 'true');
-                    }
-                });
-            });
-
-            //utils
-            function addClass(item, className) {
-                if (item.classList) {
-                    item.classList.add(className);
-                } else {
-                    item.className += ' ' + className;
-                }
-                return item;
-            }
-
-            function removeClass(item, className) {
-                if (item.classList) {
-                    item.classList.remove(className);
-                } else {
-                    item.className = item.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-                }
-                return item;
-            }
-
-            function index(item, selector) {
-                var children = item.parentNode.childNodes;
-                var num = 0;
-                for (var i = 0; i < children.length; i++) {
-                    if (children[i] == item) return num;
-                    if (children[i].nodeType == 1) num++;
-                }
-                return -1;
-            }
-            </script>
-
-            <script>
-            	$(document).ready(function() {
-  $(".parallax-container").mousemove(function(e) {
+            <div class="row">
     
-    let screenWidth = $(window).width();
-    let screenHeight = $(window).height();
-    
-    $(".parallax").css({
-      transform:
-        "translate(-" + e.pageX/screenWidth * 20 + "px, -" + e.pageY/screenHeight * 20 + "px)"
-    });
-    
-    $(".parallax .title").css({transform:
-      "translate(" + e.pageX/screenWidth * 45 + "px, " + e.pageY/screenHeight * 45 + "px)"
-    });
-  });
-});
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s3"><a href="#pro1">Брокер «слил» депозит</a></li>
+                <li class="tab col s3"><a href="#pro2">Брокер не выводит средства</a></li>
+                <li class="tab col s3"><a href="#pro3">Брокер не выходит на связь</a></li>
+                <li class="tab col s3"><a href="#pro4">Брокер вам угрожает</a></li>
+                <li class="tab col s3"><a href="#pro5">Вас обманули в Интернете</a></li>
+              </ul>
+            </div>
+            <div class="col s12">
+                <div class="wrapp_slider_problem">
+                    <div class="item" id="pro1">
+                        <div class="sect_slide 1">
+                                <div class="wrapp_sect_slide-info">
+                                    <p class="like_h2">Что делать, если Брокер «слил» депозит?</p>
+                                    <div class="wrapp_steps d_f">
+                                        <div class="item step1">
+                                            <div class="number">1</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Зафиксировать информацию</p>
+                                                <div class="list">
+                                                    <ul>
+                                                        <li>- баланс торгового счета (скриншот, фото)</li>
+                                                        <li>- историю открытия и закрытия торгов</li>
+                                                        <li>- кем были сделаны сделки</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item step2">
+                                            <div class="number">2</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Написать претензию брокеру</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapp_get-consultation col s12 d_f">
+                                        <span>Спросите у эксперта</span>
+                                        <a href="" class="btn" id="consultation">Получить консультацию</a>
+                                    </div>
+                                </div>
+                                <div class="wrapp_sect_slide-answer">
+                                    <div class="wrapp_comment-foto d_f">
+                                        <div class="title">
+                                            <span>Комментарий эксперта</span>
+                                            <span class="mark"><i class="fas fa-quote-left"></i></span>
+                                        </div>
+                                        <div class="foto">
+                                            <div class="wrapp_avatar">
+                                                <img class="foto_avatar" src="img/avatar.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapp_answer">
+                                        <p>Дополнительно Вы можете попробовать запросить информацию у брокера о последних операциях по Вашему счету, где будет содержаться данные об IP-адресах, с которых совершались действия.</p>
+                                        <p>Таким образом, вы сможете доказать, что сделки открывали не Вы и они были направлены на обнуление баланса.</p>
+                                        <b>Мухаметзянов Марат</b>
+                                        <p>Генеральный директор ЮК "Луна"</p>
+                                    </div>
 
-            </script>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="item" id="pro2">
+                        <div class="sect_slide 2">
+                                <div class="wrapp_sect_slide-info">
+                                    <p class="like_h2">Что делать, если Брокер не выводит Ваши средства с торгового счета?</p>
+                                    <div class="wrapp_steps d_f">
+                                        <div class="item step1">
+                                            <div class="number">1</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Зафиксировать информацию</p>
+                                                <div class="list">
+                                                    <ul>
+                                                        <li>баланс торгового счета с датой (скриншот, фото)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item step2">
+                                            <div class="number">2</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Написать претензию брокеру</p>
+                                                <div class="list">
+                                                    <ul>
+                                                        <li>- Сделать скриншот заявки</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapp_get-consultation col s12 d_f">
+                                        <span>Спросите у эксперта</span>
+                                        <a href="" class="btn" id="consultation">Получить консультацию</a>
+                                    </div>
+                                </div>
+                                <div class="wrapp_sect_slide-answer">
+                                    <div class="wrapp_comment-foto d_f">
+                                        <div class="title">
+                                            <span>Комментарий эксперта</span>
+                                            <span class="mark"><i class="fas fa-quote-left"></i></span>
+                                        </div>
+                                        <div class="foto">
+                                            <div class="wrapp_avatar">
+                                                <img class="foto_avatar" src="img/avatar.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapp_answer">
+                                        <p>Помимо скриншотов Вашего баланса и заявок на вывод будет полезно сделать скриншоты последних торговых операций.</p>
+                                        <p>Это необходимо в случае, если Вам станут обнулять счет, открывая убыточные сделки - Вы сможете доказать, что Брокер пытается «слить» депозит чтобы не выводить деньги.</p>
+                                        <b>Мухаметзянов Марат</b>
+                                        <p>Генеральный директор ЮК "Луна"</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="item" id="pro3">
+                        <div class="sect_slide 3">
+                                <div class="wrapp_sect_slide-info">
+                                    <p class="like_h2">Что делать, если Брокер пропал и не выходит на связь?</p>
+                                    <div class="wrapp_steps d_f">
+                                        <div class="item step1">
+                                            <div class="number">1</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Зафиксировать информацию</p>
+                                                <div class="list">
+                                                    <ul>
+                                                        <li>- скриншоты переписок</li>
+                                                        <li>- скриншоты всех ошибок сайта</li>
+                                                        <li>- записи разговоров (если имеются)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item step2">
+                                            <div class="number">2</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Написать претензию брокеру</p>
+                                                <div class="list">
+                                                    <ul>
+                                                        <li>- отправить на официальную почту компании запрос (рекомендуем отправить запрос несколько раз)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapp_get-consultation col s12 d_f">
+                                        <span>Спросите у эксперта</span>
+                                        <a href="" class="btn" id="consultation">Получить консультацию</a>
+                                    </div>
+                                </div>
+                                <div class="wrapp_sect_slide-answer">
+                                    <div class="wrapp_comment-foto d_f">
+                                        <div class="title">
+                                            <span>Комментарий эксперта</span>
+                                            <span class="mark"><i class="fas fa-quote-left"></i></span>
+                                        </div>
+                                        <div class="foto">
+                                            <div class="wrapp_avatar">
+                                                <img class="foto_avatar" src="img/avatar.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapp_answer">
+                                        <p>Как правило, брокерские компании всегда предоставляют клиенту информационную поддержку и это право прописано в договоре.</p>
+                                        <p>Таким образом, если компания не выходит на связь, прекратила свою деятельность или по каким-то другим причинам не предоставляет обещанные услуги, то Вы сможете доказать свою правоту, если сохраните доказательства неоказания услуг.</p>
+                                        <b>Мухаметзянов Марат</b>
+                                        <p>Генеральный директор ЮК "Луна"</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="item" id="pro4">
+                        <div class="sect_slide 4">
+                                <div class="wrapp_sect_slide-info">
+                                    <p class="like_h2">Что делать, если Вам угрожает Брокер?</p>
+                                    <div class="wrapp_steps d_f">
+                                        <div class="item step1">
+                                            <div class="number">1</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Зафиксировать информацию</p>
+                                                <div class="list">
+                                                    <ul>
+                                                        <li>- скриншоты переписок</li>
+                                                        <li>- записи разговоров (если имеются)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item step2">
+                                            <div class="number">2</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Расторгнуть договор с компанией</p>
+                                                <div class="list">
+                                                    <ul>
+                                                        <li>- отправить на официальную почту компании запрос (рекомендуем отправить запрос несколько раз)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item step3">
+                                            <div class="number">3</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Написать заявление в правохранительные органы</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapp_get-consultation col s12 d_f">
+                                        <span>Спросите у эксперта</span>
+                                        <a href="" class="btn" id="consultation">Получить консультацию</a>
+                                    </div>
+                                </div>
+                                <div class="wrapp_sect_slide-answer">
+                                    <div class="wrapp_comment-foto d_f">
+                                        <div class="title">
+                                            <span>Комментарий эксперта</span>
+                                            <span class="mark"><i class="fas fa-quote-left"></i></span>
+                                        </div>
+                                        <div class="foto">
+                                            <div class="wrapp_avatar">
+                                                <img class="foto_avatar" src="img/avatar.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapp_answer">
+                                        <p>После угроз начинается вымогательство, однако ни в коем случае нельзя поддаваться уговорам. Требования выплатить комиссию европейского банка, дополнительный налог за содержание активов в оффшорных зонах и т.д. являются необоснованными.</p>
+                        
+                                        <p>Если Вы уверены, что вас обманывают, угрожают, необходимо прекратить работу, уведомить Брокера о нежелании продолжать торговлю и предпринять попытку вернуть деньги.</p>
+                        
+                                        <b>Мухаметзянов Марат</b>
+                                        <p>Генеральный директор ЮК "Луна"</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="item" id="pro5">
+                        <div class="sect_slide 5">
+                                <div class="wrapp_sect_slide-info">
+                                    <p class="like_h2">Что делать, если вас обманули в Интернете?</p>
+                                    <div class="wrapp_steps d_f">
+                                        <div class="item step1">
+                                            <div class="number">1</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Собрать доказательства</p>
+                                                <div class="list">
+                                                    <ul>
+                                                        <li>- скриншоты переписок – чеки</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item step2">
+                                            <div class="number">2</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Попробовать мирно урегулировать вопрос</p>
+                                            </div>
+                                        </div>
+                                        <div class="item step3">
+                                            <div class="number">3</div>
+                                            <div class="step_question">
+                                                <p class="like_h3">Написать заявление на возврат средств</p>
+                                                <p>В банк или в тех.поддержку, если оплата происходила с использованием кошельков (Яндекс Кошелек, Qiwi и т.д.)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapp_get-consultation col s12 d_f">
+                                        <span>Спросите у эксперта</span>
+                                        <a href="" class="btn" id="consultation">Получить консультацию</a>
+                                    </div>
+                                </div>
+                                <div class="wrapp_sect_slide-answer">
+                                    <div class="wrapp_comment-foto d_f">
+                                        <div class="title">
+                                            <span>Комментарий эксперта</span>
+                                            <span class="mark"><i class="fas fa-quote-left"></i></span>
+                                        </div>
+                                        <div class="foto">
+                                            <div class="wrapp_avatar">
+                                                <img class="foto_avatar" src="img/avatar.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapp_answer">
+                                        <p>Наиболее безопасным способом оплаты в сети Интернет является оплата с банковской карты, потому что в этом случае Вы можете обратиться в банк и написать заявление на оспаривание транзакций по факту неоказания услуг, приложив все имеющиеся доказательства.</p>
+                        
+                                        <p>Для этого Вы можете воспользоваться нашим специальным сервисом.</p>
+                                        
+                                        <b>Мухаметзянов Марат</b>
+                                        <p>Генеральный директор ЮК "Луна"</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <script>
-                $('#fullpage').fullpage({
-                    //options here
-                    
-                    scrollBar: true,
-                });
-            </script>
+
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12">
+                    <h3>Возвращаем деньги от</h3>
+                </div>
+
+                <div class="col s12 owl-carousel owl-theme sect_slide_from">
+                    <div class="return-money__item">
+                        <div>
+                            <img src="img/1/1-188.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/1mzHR3xIlGo.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/1483623158Broker-Yard-Logo-480.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/arotrade-250-180.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/cherniy_spisok_brokerov_binarnih_opcionov-0009.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/emporio.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/FTO.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/fxnet-logo-788x602.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/gt-logo1.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/InvestingPro-logo.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/kbcapitals.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/littlogo.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/logo-IDBTrades.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/Maximarkets02.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/maxresdefault-1.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/PBNcapital1.png" alt="" title="">
+                        </div>
+                    </div>
+
+                    <div class="return-money__item">
+                        <div>
+                            <img src="img/1/promfx.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/TorOption-Logo-1024x357.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/TurboForex_460x342.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/unnamed.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/yardoption.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/Snimok-yekrana-2018-09-21-v-17.11.16.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/Snimok-yekrana-2018-09-21-v-17.12.45.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/Snimok-yekrana-2018-09-21-v-17.15.14.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/Snimok-yekrana-2018-09-21-v-17.16.06.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/Snimok-yekrana-2018-09-21-v-17.22.55.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/Snimok-yekrana-2018-09-21-v-17.26.03.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/Snimok-yekrana-2018-09-21-v-17.31.28.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/Snimok-yekrana-2018-09-21-v-18.39.12.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/Snimok-yekrana-2018-09-21-v-18.39.43.png" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/swiss-trade-logo.jpg" alt="" title="">
+                        </div>
+                        <div>
+                            <img src="img/1/hbc-logo.png" alt="" title="">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="banner why-we">
+
+        <div class="container">
+
+            <div class="row "   >
+                <div class="col s12">
+                    <h3>Почему именно мы можем решить <br> вашу проблему?</h3>
+                </div>
+                <div class="col s12">
+                    <div class="wrapp_sect_answer_question owl-carousel owl-theme">
+                        <div class="slider__item">
+                            <div class="slider__top">
+                                <div class="slider__icon">
+                                    <img src="img/1/1.svg" alt="" title="">
+                                </div>
+                                <div class="slider__info">
+                                    <p class="slider__title">
+                                        Без предоплат</p>
+                                    <p class="slider__subtitle">
+                                        Работаем на результат</p>
+                                </div>
+                            </div>
+                            <div class="slider__bottom">
+                                <p class="slider__description">
+                                    Оплачивайте работу
+                                    <br>юристов после получения
+                                    <br> денег на карту
+                                </p>
+                                <div class="why-we-slider__subicon first">
+                                    <img src="img/1/1.1.svg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider__item">
+                            <div class="slider__top">
+                                <div class="slider__icon">
+                                    <img src="img/1/2.svg" alt="" title="">
+                                </div>
+                                <div class="slider__info">
+                                    <p class="slider__title">
+                                        Бесплатно</p>
+                                    <p class="slider__subtitle">
+                                        Возвращайте деньги через наш <br>сервис, без комиссий и госпошлин</p>
+                                </div>
+                            </div>
+                            <div class="slider__bottom">
+                                <p class="slider__description">
+                                    Сервис для подготовки <br>документов 
+                                </p>
+                                <div class="why-we-slider__subicon first">
+                                    <img src="img/1/2.1.png" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider__item">
+                            <div class="slider__top">
+                                <div class="slider__icon">
+                                    <img src="img/1/3.png" alt="" title="">
+                                </div>
+                                <div class="slider__info">
+                                    <p class="slider__title">
+                                        Члены Торгово-<br>промышленной палаты РФ
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slider__bottom">
+                                <p class="slider__description">
+                                    ТПП РФ содействует <br>разрешению гражданско-<br>правовых споров
+                                </p>
+                                <div class="why-we-slider__subicon first">
+                                    <img src="img/1/image.png" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider__item">
+                            <div class="slider__top">
+                                <div class="slider__icon">
+                                    <img src="img/1/4.svg" alt="" title="">
+                                </div>
+                                <div class="slider__info">
+                                    <p class="slider__title">
+                                    Эксперты</p>
+                                    <p class="slider__subtitle">
+                                        в крупнейших федеральных СМИ</p>
+                                </div>
+                            </div>
+                            <div class="slider__bottom">
+                                <div class="why-we-slider__subicon first">
+                                    <img src="img/1/4.1.png" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider__item">
+                            <div class="slider__top">
+                                <div class="slider__icon">
+                                    <img src="img/1/6.svg" alt="" title="">
+                                </div>
+                                <div class="slider__info">
+                                    <p class="slider__title">
+                                        Опыт</p>
+                                    <p class="slider__subtitle">
+                                        Первый возврат от Брокера <br>в 2012 году</p>
+                                </div>
+                            </div>
+                            <div class="slider__bottom">
+                                <p class="slider__description">
+                                    Скриншот <br>первого возврата
+                                </p>
+                                <div class="why-we-slider__subicon first">
+                                    <img src="img/1/6.1.png" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__top">
+                                <div class="slider__icon">
+                                    <img src="img/1/7.svg" alt="" title="">
+                                </div>
+                                <div class="slider__info">
+                                    <p class="slider__title">
+                                        Быстро</p>
+                                    <p class="slider__subtitle">
+                                        Самый быстрый возврат <br>в течение суток
+                                </div>
+                            </div>
+                            <div class="slider__bottom">
+                                <p class="slider__description">
+                                    Возвращаем деньги в срок <br>от 1 дня до 2 месяцев.
+                                </p>
+                                <div class="why-we-slider__subicon first">
+                                    <img src="img/1/7.1.png" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__top">
+                                <div class="slider__icon">
+                                    <img src="img/1/8.svg" alt="" title="">
+                                </div>
+                                <div class="slider__info">
+                                    <p class="slider__title">
+                                        Работают эксперты</p>
+                                    <p class="slider__subtitle">
+                                        специалисты международного <br>частного права, адвокаты, а также <br>специалисты из банковской сферы.</p>
+                                </div>
+                            </div>
+                            <div class="slider__bottom">
+                                <p class="slider__description">
+                                    Возбудили уголовное дело <br>на крупнейшего европейского <br>Брокера «Metainvesting»
+                                </p>
+                                <div class="why-we-slider__subicon first">
+                                    <img src="img/1/8.1.png" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+
+
+
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="often_question d_f">
+                        <div class="item-question" >
+                            <h3>Часто задаваемые вопросы</h3>
+                            <div class="wrapp_often_question">
+                                <ul class="collapsible">
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            <span>Что такое чарджбэк?</span>
+                                        </div>
+
+                                        <div class="collapsible-body">
+                                            <span>Чарджбэк – банковская процедура, которая позволяет вернуть денежные средства при покупке услуг или товаров. Данная процедура применима если Вы совершали оплату с помощью кредитной/дебетовой карты.</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            <span>Как самому добиться возврата?</span>
+                                        </div>
+
+                                        <div class="collapsible-body">
+                                            <span>На практике доказать недобросовестность компании и вернуть деньги от брокера самостоятельно – непросто. Брокеры-аферисты уделяют большое внимание юридическим моментам своей деятельности и заранее тщательно продумывают сценарии обмана. Поэтому лучшим, а порой и единственным, способом добиться возврата средств является обращение к квалифицированному юристу.</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            <span>Как определить, что брокер - мошенник?</span>
+                                        </div>
+
+                                        <div class="collapsible-body">
+                                            <span>
+                                                <p>Мошенническую компанию можно определить по следующим признакам:</p>
+                                                <p>- Отсутствие доступа в личный кабинет на платформе;</p>
+                                                <p>- Аналитики самостоятельно проводят манипуляции на платформе, не согласовывая с Вами;</p>
+                                                <p>- Сделка открыта, торговля продолжается, но с баланса списываются деньги будто сделка была закрыта;</p>
+                                                <p>- Наблюдаются перебои в работе платформы. Информация поступает с задержками и не соответствует действительности;</p>
+                                                <p>- Компания отказывает Вам в выводе средств.</p>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            <span>А если обратиться в полицию и подать на брокера в суд, удастся вернуть деньги?</span>
+                                        </div>
+
+                                        <div class="collapsible-body">
+                                            <span>
+                                                <p>К сожалению, правоохранительные органы России редко берутся за расследования, связанные с махинациями на рынке Форекс, и отказывают пострадавшим ссылаясь на различного рода причины.</p>
+                                                <p>Судебное разбирательство, в большинстве случаев, применяется к организациям, мошенническая деятельность которых была доказана правоохранительными органами. Это наиболее сложный и длительный процесс. Здесь необходимо правильно составить исковое заявление в судебный орган, подкрепив его достаточным количеством доказательств. Судебное разбирательство имеет множество подводных камней, с которыми может столкнуться обманутый клиент:</p>
+
+                                                <p>1. Большинство брокеров-мошенников зарегистрированы в оффшорных зонах.</p>
+                                                <p>2. Для решения проблемы и возбуждения уголовного дела необходимо подавать заявление по месту регистрации компании, что не всегда возможно для клиентов.</p>
+                                                <p>3. Существует множество условий, которые необходимо соблюсти для решения проблемы. Например, возбуждение уголовного дела на Кипре возможно только при личном присутствии истца.</p>
+                                                <p>Решить такую проблему и защитить ваши интересы в суде помогут опытные юристы.</p>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            <span>Сроки возврата денежных средств?</span>
+                                        </div>
+
+                                        <div class="collapsible-body">
+                                            <span>
+                                                <p>Сроки зависят от многих факторов и последовательного соблюдения алгоритма возврата денежных средств. В среднем возврат осуществляется от 1-го до 3-х месяцев.</p>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            <span>Как вернуть деньги, если они были отправлены через электронный кошелёк или обменник?</span>
+                                        </div>
+
+                                        <div class="collapsible-body">
+                                            <span>
+                                                <p>К сожалению, swift переводы, платежи через электронные кошельки и платежные системы Qiwi и т.п, не попадают под правила процедуры Chargeback.</p>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            <span>В каком случае мы вернем вам предоплату?</span>
+                                        </div>
+
+                                        <div class="collapsible-body">
+                                            <span>
+                                                <p>Мы гарантируем возврат предоплаты по договору если банк отказывается принимать документы на chargeback.</p>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            <span>Возможна ли работа с нами без предоплаты?</span>
+                                        </div>
+
+                                        <div class="collapsible-body">
+                                            <span>
+                                                <p>Да, мы работаем и без предоплаты. При этом все расходы мы берем на себя и даже в случае проигрыша по делу, вы ничего нам не платите. Работаем на результат!</p>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            <span>По всем ли картам и банкам возможен возврат?</span>
+                                        </div>
+
+                                        <div class="collapsible-body">
+                                            <span>
+                                                <p>Так как эта процедура является банковской, она распространяется на все банки и карты без исключения. Для уточнения информации обратитесь к специалисту по нашей горячей линии.</p>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="far fa-hand-pointer"></i>
+                                            <span>Какие условия возврата?</span>
+                                        </div>
+
+                                        <div class="collapsible-body">
+                                            <span>У нас более 10 тарифов по возврату и вы можете воспользоваться наиболее подходящим для вас.</span>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-form">
+                            forma
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- /.often_question -->
+
+    </div>
+
+    <div style="overflow: hidden;">
+        <div class="right-wave"></div>
+        
+        <div class="return-money__head">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h3>Наши возвраты</h3>
+                        <div class="return-money-wrapp-sl owl-carousel owl-theme">
+                            <div class="item-slide d_f">
+                                <div class="wrapp_cases">
+                                    <p class="like_h4">Вернули клиенту более 800 000$</p>
+                                    <div class="date">12 ноября 2018</div>
+                                    <div class="wrapp_block">
+                                        <div class="block a">
+                                            <span>Наименование брокера</span> 
+                                            <img src="img/1/logo.png" alt="">
+                                        </div>
+                                        <div class="block b">
+                                            <span>Сумма ущерба</span>
+                                            <span>807 950 долларов</span>
+                                        </div>
+                                        <div class="block c">
+                                            <span>Срок возврата</span>
+                                            <span>1 месяц</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="wrapp_cases">
+                                    <p class="like_h4-wrapp">Наш самый крупный возврат (2018-й год)</p>
+                                    <p class="cases__description">Наш Клиент получил возврат полной суммы депозита от брокера. Мы осуществили возврат без чарджбэка, следуя нашей наработанной методике. Для такого быстрого возврата, ежедневно мы посвящали этому делу порядка 12 часов в течение месяца.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item-slide d_f">
+                                <div class="wrapp_cases">
+                                    <p class="like_h4">Возврат через зарубежные органы</p>
+                                    <div class="date">2014-й год</div>
+                                    <div class="wrapp_block">
+                                        <div class="block a">
+                                            <span>Наименование брокера</span> 
+                                            <img src="img/1/logo-1-1.jpg" alt="">
+                                        </div>
+                                        <div class="block b">
+                                            <span>Сумма ущерба</span>
+                                            <span>100 000 долларов</span>
+                                        </div>
+                                        <div class="block c">
+                                            <span>Срок возврата</span>
+                                            <span>2.5 месяца</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="wrapp_cases">
+                                    <p class="like_h4-wrapp">Возврат через зарубежные органы, возбуждено уголовное дело</p>
+                                    <p class="cases__description">Брокер оказался очень грамотным и принимал платежи от клиентов разными способами, чтобы не было возможности сделать возврат через платежные системы. Для возврата нам пришлось организовывать поездку по месту нахождения Брокера и лично подавать заявление в полицию. Деньги вернулись через 2-3 месяца.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item-slide d_f">
+                                <div class="wrapp_cases">
+                                    <p class="like_h4">Возврат за 1 день</p>
+                                    <div class="date">2017-й год</div>
+                                    <div class="wrapp_block">
+                                        <div class="block a">
+                                            <span>Наименование брокера</span> 
+                                            <img src="img/1/FXGTradeLogoNewBlack-2.png" alt="">
+                                        </div>
+                                        <div class="block b">
+                                            <span>Сумма ущерба</span>
+                                            <span>208 374 рубля</span>
+                                        </div>
+                                        <div class="block c">
+                                            <span>Срок возврата</span>
+                                            <span>1 день</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="wrapp_cases">
+                                    <p class="like_h4-wrapp">Самый минимальный срок возврата денежных средств</p>
+                                    <p class="cases__description">В этой ситуации нам удалось вернуть деньги в рекордно короткие сроки - за 1 день. Благодаря оперативной и грамотной работе наших специалистов деньги в полном объеме вернулись на банковскую карту клиента.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item-slide d_f">
+                                <div class="wrapp_cases">
+                                    <p class="like_h4">Возврат через банк клиента</p>
+                                    <div class="date">2018-й год</div>
+                                    <div class="wrapp_block">
+                                        <div class="block a">
+                                            <span>Наименование брокера</span> 
+                                            <img src="img/1/logo-3.jpg" alt="">
+                                        </div>
+                                        <div class="block b">
+                                            <span>Сумма ущерба</span>
+                                            <span>1 545 182 рубля</span>
+                                        </div>
+                                        <div class="block c">
+                                            <span>Срок возврата</span>
+                                            <span>1.5 месяца</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="wrapp_cases">
+                                    <p class="like_h4-wrapp">Возврат крупной суммы менее, чем за 2 месяца</p>
+                                    <p class="cases__description">Клиент понес значительный ущерб, в связи с чем наши специалисты работали над этим делом почти два месяца и успешно вернули деньги. Ситуация была урегулирована по средствам обращения к брокеру и в банк клиента.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item-slide d_f">
+                                <div class="wrapp_cases">
+                                    <p class="like_h4">Возврат всей суммы с первого раза</p>
+                                    <div class="date">2018-й год</div>
+                                    <div class="wrapp_block">
+                                        <div class="block a">
+                                            <span>Наименование брокера</span> 
+                                            <img src="img/1/logo-4-1.jpg" alt="">
+                                        </div>
+                                        <div class="block b">
+                                            <span>Сумма ущерба</span>
+                                            <span>570 286 рублей</span>
+                                        </div>
+                                        <div class="block c">
+                                            <span>Срок возврата</span>
+                                            <span>2 месяца</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="wrapp_cases">
+                                    <p class="like_h4-wrapp">Быстрый возврат всей суммы с первого раза (без отказов)</p>
+                                    <p class="cases__description">Один из немногих возвратов без повторной подачи заявления в банк. Не редко в нашей практике мы сталкиваемся с отказами от банков, что мешает возврату денег - подобные ситуации встречаются часто, однако даже после первого отказа от банка остается шанс вернуть деньги.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item-slide d_f">
+                                <div class="wrapp_cases">
+                                    <p class="like_h4">Возврат с помощью зарубежного регулятора</p>
+                                    <div class="date">2019-й год</div>
+                                    <div class="wrapp_block">
+                                        <div class="block a">
+                                            <span>Наименование брокера</span> 
+                                            <img src="img/1/logo-5.jpg" alt="">
+                                        </div>
+                                        <div class="block b">
+                                            <span>Сумма ущерба</span>
+                                            <span>8000 долларов</span>
+                                        </div>
+                                        <div class="block c">
+                                            <span>Срок возврата</span>
+                                            <span>2 месяца</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="wrapp_cases">
+                                    <p class="like_h4-wrapp">Применялся комплекс мер: чарджбэк в совокупности с зарубежным регулятором</p>
+                                    <p class="cases__description">В ходе работы над этим делом мы заручились помощью финансового регулятора и направили заявление на оспаривание транзакций в банк. Спустя 2 месяца переговоров и обжалований  денежные средства вернулись на карту клиента.</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sect_treatment">
+            
+            <div class="container">
+                <div class="wrapper d_f">
+                    <div class="item-case case_foto d_f">
+                        <div class="wrapp_case">
+                            <i class="fas fa-quote-left"></i>
+                            <p class="treatment__quote">Если вам нужна помощь, Вы можете обратиться ко мне и я лично вас проконсультирую по телефону, в WhatsApp, Viber или Telegram:<br> +7 (904) 717-00-13</p>
+                            <p><b>Мухаметзянов Марат</b></p>
+                            <p>Генеральный директор ЮК Луна</p>
+                        </div>
+                        <div class="wrapp_case">
+                            <img src="img/1/director-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item-case case-form">
+                        <b>Оставьте заявку и я перезвоню вам в течении 5 минут</b>
+        
+        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+    <footer style="background: #000; color: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="footer_item">
+                        <p>Реквизиты</p>
+                        
+                        <div class="footer__info">
+                            <p>Общество с ограниченной ответственностью «Юридическая компания «Луна»</p>
+                            <p>Директор: Мухаметзянов Марат Радифович</p>
+                            <p>Юридический и фактический адрес: г. Казань, пр-т Ямашева, д. 45А, 6-й этаж, офис 7</p>
+                            <p>Контактный телефон: <a href="tel:8 800 222-30-27">8 800 222-30-27</a></p>
+                            <p>E-mail: <a href="mailto:help@charge-back.ru">help@charge-back.ru</a></p>
+                            <p>ИНН Организации: 1658195551</p>
+                            <p>ОГРН: 1161690172820</p>
+                            <p>КПП: 165801001</p>
+                            <p>ОКВЭД 65.12</p>
+                        </div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer__nav">
+                            <a href="#" data-id="welcome" class="scrolled">Главная</a>
+                            <a href="#" data-id="working" class="scrolled">Деятельность</a>
+                            <a href="#" data-id="adventages" class="scrolled">Преимущества</a>
+                            <a href="#" data-id="cases" class="scrolled">Кейсы</a>
+                            <a href="#" data-id="refund" class="scrolled">Способы возврата средств</a>
+                        </div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer__nav">
+                            <a href="#" data-id="faq" class="scrolled">Частые вопросы</a>
+                            <a href="#" data-id="news" class="scrolled">Новости</a>
+                            <a href="#" data-id="contacts" class="scrolled">Контакты</a>
+                            <a href="/blog/">Блог</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery Version 3.4.1 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    
+
+    <!-- _________________________________________________ -->
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/iziModal.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="js/my_js.js" ></script>
+
 </body>
 
 </html>

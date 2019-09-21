@@ -1,0 +1,96 @@
+(function(){
+    var onLoadCallbackOldCallback  = window.jivo_onLoadCallback;
+    var onIntroductionOldCallback  = window.jivo_onIntroduction;
+    var onChangeStateOldCallback   = window.jivo_onChangeState;
+    var isLeadByOfflineMessageSent = false;
+
+    var getDefaultContactData = function() {
+        var contactInfo = jivo_api.getContactInfo();
+        if (contactInfo.name === undefined) {
+            contactInfo.name = contactInfo.client_name;
+        }
+
+        return contactInfo;
+    };
+
+    var getDefaultLeadData = function() {
+        var data = {
+            leadName: 'JivoSite Lead'
+        };
+        var contactData = getDefaultContactData();
+
+        for (var attrNameContactData in contactData) {
+            if (contactData.hasOwnProperty(attrNameContactData)) {
+                data[attrNameContactData] = contactData[attrNameContactData];
+            }
+        }
+
+        return data;
+    };
+
+    var sendLead = function(data) {
+        window.roistatGoal.reach(data);
+    };
+
+    var ourOnLoadCallback = function() {
+        jivo_api.setCustomData([
+            {
+                content : 'Roistat: ' + roistatGetCookie('roistat_visit')
+            }
+        ]);
+
+        if (jivo_config.chat_mode === 'offline') {
+            console.log('operator is offline');
+        } else {
+            console.log('Operator is online');
+        }
+    };
+
+    var ourOnIntroduction = function() {
+        var data = getDefaultLeadData();
+        sendLead(data);
+    };
+
+    var sendLeadByOfflineMessage = function() {
+        var textFieldValue = null;
+        var jivoContent = document.getElementById('jcont_content_wrapper');
+        if (jivoContent !== undefined) {
+            textFieldValue = jivoContent.getElementsByTagName('textarea')[0].value;
+        }
+        var repeats = 5;
+        for (var i = 0; i <= repeats; i++) {
+            setTimeout(function (i) {
+                var data = getDefaultLeadData();
+                if ((data.email !== null || data.phone !== null || i === repeats) && !isLeadByOfflineMessageSent) {
+                    data.text = textFieldValue;
+                    sendLead(data);
+                    isLeadByOfflineMessageSent = true;
+                }
+            }, i * 1000, i);
+        }
+    };
+
+    window.jivo_onLoadCallback = function() {
+        if (onLoadCallbackOldCallback) {
+            onLoadCallbackOldCallback();
+        }
+        ourOnLoadCallback();
+    };
+
+    window.jivo_onIntroduction = function () {
+        if (onIntroductionOldCallback) {
+            onIntroductionOldCallback();
+        }
+        ourOnIntroduction();
+    };
+
+    window.jivo_onChangeState = function(state) {
+        if (onChangeStateOldCallback) {
+            onChangeStateOldCallback();
+        }
+
+        if (state === 'offline/success') {
+            sendLeadByOfflineMessage();
+        }
+    };
+})();
