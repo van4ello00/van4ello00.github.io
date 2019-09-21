@@ -11,8 +11,7 @@
     <title>это лендос</title>
     <meta name="description" content="описание">
     <meta name="keywords" content="ключ">
-    <!-- Bootstrap Core CSS -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
@@ -41,14 +40,19 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="header_nav">
     <div class="nav-wrapper">
       <div class="container"> 
-          <a href="#" class="brand-logo">Logo</a>
+          <a href="#" class="brand-logo"><img src="img/1/logo-logo.jpg" alt=""></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#">Sass</a></li>
-            <li><a href="#">Components</a></li>
-            <li><a href="#">JavaScript</a></li>
+            <li>
+                <a href="" class="tel_header">8 800 222-30-27
+                </a>
+            </li>
+            <li><a href="#">Деятельность</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Возвраты</a></li>
+            <li><a href="#">Частые вопросы</a></li>
           </ul>
       </div>
     </div>
@@ -62,9 +66,9 @@
 
             <div class="row">
                 <div class="col s12">
-                    <div class="intro-message">
+                    <div class="intro-message d_f">
 
-                        <div class="welcome-n__info-wrapper col s8">
+                        <div class="welcome-n__info-wrapper">
                             <p class="welcome-n__title">Вернём деньги от брокера-мошенника <br><span><b>за два месяца без предоплат</b></span></p>
                             <div class="welcome-n__adventages welcome-n-adventages d_f">
                                 <div class="welcome-n-adventages__item">
@@ -92,10 +96,6 @@
                                 <form class="form">
 
                                     <div class="col s12">
-                                        <div class="input-field col s6">
-                                          <input id="last_name" type="text" class="validate">
-                                          <label for="last_name">Ваше имя</label>
-                                        </div>
 
                                         <div class="input-field col s6">
                                           <input id="last_name" type="text" class="validate">
@@ -109,7 +109,7 @@
                                     </div>
 
                                     <div>
-                                        <span>Ущерб</span>
+                                        <span style="margin-left: 22px;">Ущерб</span>
                                         <label>
                                             <input name="group1" type="radio" />
                                             <span>До 100 000 руб.</span>
@@ -122,13 +122,13 @@
                                     <div class="form__wrapper">
                                         <div class="form__item form__item--checkbox">
 
-                                            <p>
+                                            <p style="margin-left: 22px; padding-right: 10px; ">
                                               <label>
                                                 <input type="checkbox" checked="checked" />
-                                                <span>Я даю согласие на обработку персональных данных</span>
+                                                <span style="font-size: 12px;">Я даю согласие на обработку персональных данных</span>
                                               </label>
                                             </p>
-                                            <button class="btn waves-effect waves-light" type="submit" name="action" disabled="disabled">Получить консультацию</button>
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Получить консультацию</button>
                                         </div>
                                     </div>
                                 </form>
@@ -136,7 +136,7 @@
                         </div>
 
 
-                        <div class="welcome-n-slider__info js-welcome-n-slider-info col s4" >
+                        <div class="welcome-n-slider__info js-welcome-n-slider-info" >
                             <p class="welcome-n-slider__name">Мухаметзянов Марат</p>
                             <p>Генеральный директор 
                                 <br> "ЮК Луна"</p>
@@ -866,7 +866,7 @@
                                 <ul class="collapsible">
                                     <li>
                                         <div class="collapsible-header">
-                                            <i class="fas fa-mouse-pointer"></i>
+                                            <i class="fas fa-plus-circle"></i>
                                             <span>Что такое чарджбэк?</span>
                                         </div>
 
@@ -877,7 +877,7 @@
 
                                     <li>
                                         <div class="collapsible-header">
-                                            <i class="fas fa-mouse-pointer"></i>
+                                            <i class="fas fa-plus-circle"></i>
                                             <span>Как самому добиться возврата?</span>
                                         </div>
 
@@ -888,7 +888,7 @@
 
                                     <li>
                                         <div class="collapsible-header">
-                                            <i class="fas fa-mouse-pointer"></i>
+                                            <i class="fas fa-plus-circle"></i>
                                             <span>Как определить, что брокер - мошенник?</span>
                                         </div>
 
@@ -906,7 +906,7 @@
 
                                     <li>
                                         <div class="collapsible-header">
-                                            <i class="fas fa-mouse-pointer"></i>
+                                            <i class="fas fa-plus-circle"></i>
                                             <span>А если обратиться в полицию и подать на брокера в суд, удастся вернуть деньги?</span>
                                         </div>
 
@@ -925,7 +925,7 @@
 
                                     <li>
                                         <div class="collapsible-header">
-                                            <i class="fas fa-mouse-pointer"></i>
+                                            <i class="fas fa-plus-circle"></i>
                                             <span>Сроки возврата денежных средств?</span>
                                         </div>
 
@@ -938,7 +938,7 @@
 
                                     <li>
                                         <div class="collapsible-header">
-                                            <i class="fas fa-mouse-pointer"></i>
+                                            <i class="fas fa-plus-circle"></i>
                                             <span>Как вернуть деньги, если они были отправлены через электронный кошелёк или обменник?</span>
                                         </div>
 
@@ -951,7 +951,7 @@
 
                                     <li>
                                         <div class="collapsible-header">
-                                            <i class="fas fa-mouse-pointer"></i>
+                                            <i class="fas fa-plus-circle"></i>
                                             <span>В каком случае мы вернем вам предоплату?</span>
                                         </div>
 
@@ -964,7 +964,7 @@
 
                                     <li>
                                         <div class="collapsible-header">
-                                            <i class="fas fa-mouse-pointer"></i>
+                                            <i class="fas fa-plus-circle"></i>
                                             <span>Возможна ли работа с нами без предоплаты?</span>
                                         </div>
 
@@ -977,7 +977,7 @@
 
                                     <li>
                                         <div class="collapsible-header">
-                                            <i class="fas fa-mouse-pointer"></i>
+                                            <i class="fas fa-plus-circle"></i>
                                             <span>По всем ли картам и банкам возможен возврат?</span>
                                         </div>
 
@@ -990,7 +990,7 @@
 
                                     <li>
                                         <div class="collapsible-header">
-                                            <i class="far fa-hand-pointer"></i>
+                                            <i class="fas fa-plus-circle"></i>
                                             <span>Какие условия возврата?</span>
                                         </div>
 
@@ -1003,7 +1003,48 @@
                             </div>
                         </div>
                         <div class="item-form">
-                            forma
+                            <div class="welcome-n__form  welcome-n__form2">
+
+                                <form class="form">
+
+                                    <div class="col s12">
+
+                                        <div class="input-field col s12">
+                                          <input id="last_name2" type="text" class="validate">
+                                          <label for="last_name2">Ваш телефон</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s12">
+                                          <input id="email2" type="text" class="validate">
+                                          <label for="email2">Ваш email</label>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <span style="margin-left: 22px;">Ущерб</span>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>До 100 000 руб.</span>
+                                        </label>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>От 100 000 руб.</span>
+                                        </label>
+                                    </div>
+                                    <div class="form__wrapper">
+                                        <div class="form__item form__item--checkbox">
+
+                                            <p style="margin-left: 22px; padding-right: 10px; ">
+                                              <label>
+                                                <input type="checkbox" checked="checked" />
+                                                <span style="font-size: 12px;">Я даю согласие на обработку персональных данных</span>
+                                              </label>
+                                            </p>
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Получить консультацию</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1202,7 +1243,48 @@
                     <div class="item-case case-form">
                         <b>Оставьте заявку и я перезвоню вам в течении 5 минут</b>
         
-        
+                        <div class="welcome-n__form  welcome-n__form2">
+
+                                <form class="form">
+
+                                    <div class="col s12">
+
+                                        <div class="input-field col s12">
+                                          <input id="last_name3" type="text" class="validate">
+                                          <label for="last_name3">Ваш телефон</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s12">
+                                          <input id="email3" type="text" class="validate">
+                                          <label for="email3">Ваш email</label>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <span style="margin-left: 22px;">Ущерб</span>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>До 100 000 руб.</span>
+                                        </label>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>От 100 000 руб.</span>
+                                        </label>
+                                    </div>
+                                    <div class="form__wrapper">
+                                        <div class="form__item form__item--checkbox">
+
+                                            <p style="margin-left: 22px; padding-right: 10px; ">
+                                              <label>
+                                                <input type="checkbox" checked="checked" />
+                                                <span style="font-size: 12px;">Я даю согласие на обработку персональных данных</span>
+                                              </label>
+                                            </p>
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Получить консультацию</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                     </div>
                 </div>
             </div>
